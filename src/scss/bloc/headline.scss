@@ -1,0 +1,139 @@
+.p--2{
+  left:calc(0px * #{$size});
+  .p1{
+    transition-delay: calc(8 * #{$speed});
+    bottom:auto;
+    top:0;
+  }
+  .p2{
+    transition-delay:calc(5 * #{$speed});
+    right:auto;
+    left:0;
+  }
+  .p3{
+    transition-delay:calc(0 * #{$speed});
+    top:auto;
+    bottom:0;
+  }
+}
+.r--2{
+  left:calc(0px * #{$size});
+  .r1{
+    transition-delay:calc(2 * #{$speed});
+    &.active{
+       width:calc(4px * #{$size});
+    }
+  }
+  .r2{
+    transition-delay:calc(7 * #{$speed});
+    left:calc(4px * #{$size});
+  }
+  .r3{
+    transition-delay:calc(12 * #{$speed});
+    left:calc(4px * #{$size});
+    &.active{
+      width:calc(6px * #{$size});
+    }
+  }
+}
+.o--1{
+  left:calc(4px * #{$size});
+  .o1{
+    transition-delay:calc(16 * #{$speed});
+    bottom:0;
+  }
+  .o2{
+    transition-delay:calc(21 * #{$speed});
+    bottom:0;
+  }
+  .o3{
+    transition-delay:calc(24 * #{$speed});
+    bottom:0;
+  }
+  .o4{
+    transition-delay:calc(29 * #{$speed});
+  }
+}
+.j--1{
+  left:calc(10px * #{$size});
+  .j1{
+    transition-delay:calc(34 * #{$speed});
+  }
+  .j2{
+    transition-delay:calc(34 * #{$speed});
+  }
+  .j3{
+    transition-delay:calc(36 * #{$speed});
+  }
+}
+
+.e--2{
+  left:calc(12px * #{$size});
+  .e2{
+    transition-delay:calc(41 * #{$speed});
+  }
+  .e1{
+    transition-delay:calc(44 * #{$speed});
+  }
+  .e4{
+    transition-delay:calc(48 * #{$speed});
+  }
+  .e5{
+    transition-delay:calc(52 * #{$speed});
+  }
+}
+.c--2{
+  left:calc(16px * #{$size});
+  .c2{
+    top:auto;
+    bottom:0;
+    transition-delay:calc(59 * #{$speed});
+  }
+  .c3{
+    top:0;
+    bottom:auto;
+    transition-delay:calc(63 * #{$speed});
+    &.active{
+      width:calc(9px * #{$size});
+    }
+  }
+}
+
+.t--3{
+   left:calc(20px * #{$size});
+  .t1{
+    transition-delay:calc(66 * #{$speed});
+   }
+  .t2{
+    transition:width calc(3 * #{$speed});
+    transition-delay:calc(66 * #{$speed});
+    &.active{
+      width:calc(3px * #{$size});
+      top:calc(2px * #{$size});
+      left:calc(-1px * #{$size});
+    }
+  }
+}
+
+.s--3{
+  left:calc(20px * #{$size});
+  .s1{
+    transition-delay: calc(72 * #{$speed});
+  }
+  .s2{
+    transition-delay: calc(76 * #{$speed});
+  }
+  .s3{
+    transition-delay: calc(79 * #{$speed});
+  }
+  .s4{
+    transition-delay: calc(71 * #{$speed});
+  }
+  .s5{
+    transition:height calc(3 * #{$speed});
+    transition-delay: calc(82 * #{$speed});
+    &.active{
+      width:calc(3px * #{$size});
+    }
+  }
+}

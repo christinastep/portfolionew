@@ -1,0 +1,229 @@
+.logo{
+  position: fixed;
+  top:0;
+}
+
+
+.christinastephan{
+  .christinastephan__c{
+    .c1{
+      transition:width calc(3 * #{$speed});
+    }
+    .c2{
+      transition-delay:calc(3 * #{$speed});
+    }
+    .c3{
+      transition-delay:calc(8 * #{$speed});
+    }
+  }
+  
+  .christinastephan__h{
+    .h1{
+      transition-delay: calc(13 * #{$speed});
+    }
+    .h2{
+      transition-delay: calc(20 * #{$speed});
+    }
+    .h3{
+      transition-delay: calc(23 * #{$speed});
+    }
+  }
+  
+  .christinastephan__r{
+    .r1{
+      transition-delay:calc(28 * #{$speed});
+    }
+    .r2{
+      transition-delay:calc(31 * #{$speed});
+    }
+    .r3{
+      transition-delay:calc(36 * #{$speed});
+    }
+  }
+  
+  .christinastephan__i{
+    position: initial;
+    .i1{
+      transition:height calc(5 * #{$speed}) calc(39 * #{$speed});
+    }
+    .i2{
+      transition:height calc(1 * #{$speed}) calc(39 * #{$speed});
+    }
+  }
+  
+  .christinastephan__s{
+    .s1{
+      transition-delay: calc(44 * #{$speed});
+    }
+    .s2{
+      transition-delay: calc(49 * #{$speed});
+    }
+    .s3{
+      transition-delay: calc(53 * #{$speed});
+    }
+    .s4{
+      transition-delay: calc(57 * #{$speed});
+    }
+    .s5{
+      transition-delay: calc(61 * #{$speed});
+    }
+  }
+  
+  .christinastephan__t{
+    .t1{
+      transition-delay:calc(68 * #{$speed});
+    }
+    .t2{
+      transition-delay:calc(68 * #{$speed});
+    }
+  }
+  
+  .christinastephan__i--2{
+    .i1{
+      transition:height calc(5 * #{$speed}) calc(75 * #{$speed});
+    }
+    .i2{
+      transition:height calc(1 * #{$speed}) calc(75 * #{$speed});
+    }
+  }
+  .christinastephan__n{
+    //left:calc(18px * #{$size});
+    .n1{
+      transition-delay:calc(80 * #{$speed});
+    }
+    .n2{
+      transition-delay:calc(83 * #{$speed});
+    }
+    .n3{
+      transition-delay:calc(88 * #{$speed});
+    }
+    .n4{
+      transition-delay:calc(91 * #{$speed});
+    }
+  }
+  
+  .christinastephan__a{
+    //left:calc(22px * #{$size});
+    .a1{
+      transition-delay: calc(96 * #{$speed});
+    }
+    .a2{
+      transition-delay:calc(99 * #{$speed});
+    }
+    .a3{
+      transition-delay: calc(104 * #{$speed});
+    }
+    .a4{
+      transition-delay: calc(107 * #{$speed});
+    }
+    .a5{
+      transition-delay: calc(112 * #{$speed});
+    }
+    .a6{
+      transition-delay: calc(114 * #{$speed});
+    }
+  }
+
+  .christinastephan__s--2{
+    .s1{
+      transition-delay: calc(114 * #{$speed}); 
+    }
+    .s2{
+      transition-delay: calc(119 * #{$speed}); 
+    }
+    .s3{
+      transition-delay: calc(122 * #{$speed});
+    }
+    .s4{
+      transition-delay: calc(115 * #{$speed});
+    }
+    .s5{
+      transition-delay: calc(118 * #{$speed});
+    }
+  }
+  
+  .christinastephan__t--2{
+    .t1{
+      transition-delay:calc(125 * #{$speed});
+    }
+    .t2{
+      transition-delay:calc(125 * #{$speed});
+    }
+  }
+  
+  .christinastephan__e{
+    .e1{
+      transition-delay:calc(128 * #{$speed});
+    }
+    .e2{
+      transition-delay:calc(131 * #{$speed});
+    }
+    .e3{
+      transition-delay:calc(136 * #{$speed});
+    }
+    .e4{
+      transition-delay:calc(139 * #{$speed});
+    }  
+    .e5{
+      transition-delay:calc(144 * #{$speed});
+    }
+  }
+  
+  .christinastephan__p{
+    .p1{
+      transition-delay: calc(148 * #{$speed});
+    }
+    .p2{
+      transition-delay:calc(153 * #{$speed});
+    }
+    .p3{
+      transition-delay:calc(156 * #{$speed});
+    }
+  }
+  
+  
+  .christinastephan__h--2{
+    .h2{
+      transition-delay: calc(163 * #{$speed});
+    }
+    .h3{
+      transition-delay: calc(167 * #{$speed});
+    }
+    .h1{
+      transition-delay: calc(171 * #{$speed});
+    }
+  }
+  
+  .christinastephan__a--2{
+    .a1{
+      transition-delay: calc(173 * #{$speed});
+    }
+    .a2{
+      transition-delay:calc(176 * #{$speed});
+    }
+    .a3{
+      transition-delay: calc(179 * #{$speed});
+    }
+    .a4{
+      transition-delay: calc(182 * #{$speed});
+    }
+    .a5{
+      transition-delay: calc(189 * #{$speed});
+    }
+  }
+  
+  .christinastephan__n--2{
+    .n1{
+      transition-delay:calc(192 * #{$speed});
+    }
+    .n2{
+      transition-delay:calc(195 * #{$speed});
+    }
+    .n3{
+      transition-delay:calc(200 * #{$speed});
+    }
+    .n4{
+      transition-delay:calc(203 * #{$speed});
+    }
+  }
+}
