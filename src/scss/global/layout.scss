@@ -129,7 +129,9 @@ section{
   }
   
   .projectIntro{
-    display: flex;
+    @media screen and (min-width: 1100px) {
+      display: flex;
+    }
     margin-top:calc(1px *#{$size});
     .discription{
       margin-left:calc(1px *#{$size});
@@ -340,7 +342,7 @@ section{
   }
   @media screen and (min-width: 640px) {
     &.visible{
-      margin-top:calc(9px * 15);
+      margin-top:calc(9px * 12);
     }
   }
 

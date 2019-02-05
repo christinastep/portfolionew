@@ -633,8 +633,8 @@ nav .word.word--menu .letter .letter__elemnt.active{
 .about .word.word--menu .letter .letter__elemnt.active,
 .contact .word.word--menu .letter .letter__elemnt.active,
 .project .word.word--menu .letter .letter__elemnt.active{
-  width: calc(1px * 15);
-  height:calc(1px * 15);
+  width: calc(1px * 12);
+  height:calc(1px * 12);
 }
 
 
@@ -676,8 +676,8 @@ nav .word.word--menu .letter .letter__elemnt.active{
 
 .about, .project, .contact{
   .word.word--menu{
-    height:calc(7px * 15);
-    margin-bottom: calc(2px * 15);
+    height:calc(7px * 12);
+    margin-bottom: calc(2px * 12);
     @media screen and (max-width: 639px) {
       width: 100%;
       margin-left: -25px;
@@ -685,45 +685,45 @@ nav .word.word--menu .letter .letter__elemnt.active{
     cursor: pointer;
     .letter{
       @media screen and (min-width: 640px) {
-        height:calc(10px * 15);
+        height:calc(10px * 12);
       }
       transition: height 0.3s;
 
       &:hover{
-        height:calc(10px * 15);
+        height:calc(10px * 12);
       }
       &.animationActive{
-        height:calc(7px * 15);
+        height:calc(7px * 12);
       }
       .letter__elemnt{
         background-color:white;
       }
     }
     //about
-    @include letter--a(15,0.03s);
-    @include letter--b(15,0.03s);
-    @include letter--o(15,0.03s);
-    @include letter--u(15,0.03s);
-    @include letter--t(15,0.03s);
+    @include letter--a(12,0.03s);
+    @include letter--b(12,0.03s);
+    @include letter--o(12,0.03s);
+    @include letter--u(12,0.03s);
+    @include letter--t(12,0.03s);
 
     //projects
-    @include letter--p(15,0.03s);
-    @include letter--r(15,0.03s);
-    @include letter--o(15,0.03s);
-    @include letter--j(15,0.03s);
-    @include letter--e(15,0.03s);
-    @include letter--c(15,0.03s);
-    @include letter--t(15,0.03s);
-    @include letter--s(15,0.03s);
+    @include letter--p(12,0.03s);
+    @include letter--r(12,0.03s);
+    @include letter--o(12,0.03s);
+    @include letter--j(12,0.03s);
+    @include letter--e(12,0.03s);
+    @include letter--c(12,0.03s);
+    @include letter--t(12,0.03s);
+    @include letter--s(12,0.03s);
 
      //contact
-     @include letter--c(15,0.03s);
-     @include letter--o(15,0.03s);
-     @include letter--n(15,0.03s);
-     @include letter--t(15,0.03s);
-     @include letter--a(15,0.03s);
-     @include letter--c(15,0.03s);
-     @include letter--t(15,0.03s);
+     @include letter--c(12,0.03s);
+     @include letter--o(12,0.03s);
+     @include letter--n(12,0.03s);
+     @include letter--t(12,0.03s);
+     @include letter--a(12,0.03s);
+     @include letter--c(12,0.03s);
+     @include letter--t(12,0.03s);
  
   }
 }
@@ -732,7 +732,7 @@ nav .word.word--menu .letter .letter__elemnt.active{
   padding-bottom: 50px;;
   .word.word--menu{
     .letter{
-      height:calc(7px * 15);
+      height:calc(7px * 12);
     }
   }
   a{

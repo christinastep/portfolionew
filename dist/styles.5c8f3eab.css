@@ -220,8 +220,10 @@ section {
   .project--full .project--full__description {
     max-width: 600px; }
   .project--full .projectIntro {
-    display: flex;
     margin-top: calc(1px *50); }
+    @media screen and (min-width: 1100px) {
+      .project--full .projectIntro {
+        display: flex; } }
     .project--full .projectIntro .discription {
       margin-left: calc(1px *50);
       width: 100%; }
@@ -380,7 +382,7 @@ section {
     margin-top: 0vh; }
   @media screen and (min-width: 640px) {
     .section--2.visible {
-      margin-top: calc(9px * 15); } }
+      margin-top: calc(9px * 12); } }
 
 body {
   background-color: red; }
@@ -487,8 +489,8 @@ nav .word.word--menu .letter .letter__elemnt.active {
 .about .word.word--menu .letter .letter__elemnt.active,
 .contact .word.word--menu .letter .letter__elemnt.active,
 .project .word.word--menu .letter .letter__elemnt.active {
-  width: calc(1px * 15);
-  height: calc(1px * 15); }
+  width: calc(1px * 12);
+  height: calc(1px * 12); }
 
 .logo .word {
   height: calc(7px * 50); }
@@ -941,8 +943,8 @@ nav .word.word--menu .letter .letter__elemnt.active {
       height: calc(5px * 50); }
 
 .about .word.word--menu, .project .word.word--menu, .contact .word.word--menu {
-  height: calc(7px * 15);
-  margin-bottom: calc(2px * 15);
+  height: calc(7px * 12);
+  margin-bottom: calc(2px * 12);
   cursor: pointer; }
   @media screen and (max-width: 639px) {
     .about .word.word--menu, .project .word.word--menu, .contact .word.word--menu {
@@ -952,535 +954,535 @@ nav .word.word--menu .letter .letter__elemnt.active {
     transition: height 0.3s; }
     @media screen and (min-width: 640px) {
       .about .word.word--menu .letter, .project .word.word--menu .letter, .contact .word.word--menu .letter {
-        height: calc(10px * 15); } }
+        height: calc(10px * 12); } }
     .about .word.word--menu .letter:hover, .project .word.word--menu .letter:hover, .contact .word.word--menu .letter:hover {
-      height: calc(10px * 15); }
+      height: calc(10px * 12); }
     .about .word.word--menu .letter.animationActive, .project .word.word--menu .letter.animationActive, .contact .word.word--menu .letter.animationActive {
-      height: calc(7px * 15); }
+      height: calc(7px * 12); }
     .about .word.word--menu .letter .letter__elemnt, .project .word.word--menu .letter .letter__elemnt, .contact .word.word--menu .letter .letter__elemnt {
       background-color: white; }
   .about .word.word--menu .a, .project .word.word--menu .a, .contact .word.word--menu .a {
-    width: calc(5px * 15); }
+    width: calc(5px * 12); }
     .about .word.word--menu .a .a1, .project .word.word--menu .a .a1, .contact .word.word--menu .a .a1 {
-      bottom: calc(0px * 15);
+      bottom: calc(0px * 12);
       transition: width calc(2 * 0.03s); }
       .about .word.word--menu .a .a1.active, .project .word.word--menu .a .a1.active, .contact .word.word--menu .a .a1.active {
-        width: calc(2px * 15); }
+        width: calc(2px * 12); }
     .about .word.word--menu .a .a2, .project .word.word--menu .a .a2, .contact .word.word--menu .a .a2 {
-      left: calc(1px * 15);
-      bottom: calc(0px * 15);
+      left: calc(1px * 12);
+      bottom: calc(0px * 12);
       transition: height calc(5 * 0.03s); }
       .about .word.word--menu .a .a2.active, .project .word.word--menu .a .a2.active, .contact .word.word--menu .a .a2.active {
-        height: calc(5px * 15); }
+        height: calc(5px * 12); }
     .about .word.word--menu .a .a3, .project .word.word--menu .a .a3, .contact .word.word--menu .a .a3 {
-      bottom: calc(4px * 15);
-      left: calc(1px * 15);
+      bottom: calc(4px * 12);
+      left: calc(1px * 12);
       transition: width calc(3 * 0.03s); }
       .about .word.word--menu .a .a3.active, .project .word.word--menu .a .a3.active, .contact .word.word--menu .a .a3.active {
-        width: calc(3px * 15); }
+        width: calc(3px * 12); }
     .about .word.word--menu .a .a4, .project .word.word--menu .a .a4, .contact .word.word--menu .a .a4 {
-      left: calc(3px * 15);
-      top: calc(2px * 15);
+      left: calc(3px * 12);
+      top: calc(2px * 12);
       transition: height calc(5 * 0.03s); }
       .about .word.word--menu .a .a4.active, .project .word.word--menu .a .a4.active, .contact .word.word--menu .a .a4.active {
-        height: calc(5px * 15); }
+        height: calc(5px * 12); }
     .about .word.word--menu .a .a5, .project .word.word--menu .a .a5, .contact .word.word--menu .a .a5 {
-      bottom: calc(2px * 15);
-      left: calc(1px * 15);
+      bottom: calc(2px * 12);
+      left: calc(1px * 12);
       transition: width calc(3 * 0.03s); }
       .about .word.word--menu .a .a5.active, .project .word.word--menu .a .a5.active, .contact .word.word--menu .a .a5.active {
-        width: calc(3px * 15); }
+        width: calc(3px * 12); }
     .about .word.word--menu .a .a6, .project .word.word--menu .a .a6, .contact .word.word--menu .a .a6 {
-      bottom: calc(0px * 15);
-      left: calc(4px * 15);
+      bottom: calc(0px * 12);
+      left: calc(4px * 12);
       transition: width calc(1 * 0.03s); }
       .about .word.word--menu .a .a6.active, .project .word.word--menu .a .a6.active, .contact .word.word--menu .a .a6.active {
-        width: calc(1px * 15); }
+        width: calc(1px * 12); }
     .about .word.word--menu .a.connectionEnd, .project .word.word--menu .a.connectionEnd, .contact .word.word--menu .a.connectionEnd {
-      width: calc(4px * 15); }
+      width: calc(4px * 12); }
       .about .word.word--menu .a.connectionEnd .a1, .project .word.word--menu .a.connectionEnd .a1, .contact .word.word--menu .a.connectionEnd .a1 {
         display: none; }
       .about .word.word--menu .a.connectionEnd .a2, .about .word.word--menu .a.connectionEnd .a3, .about .word.word--menu .a.connectionEnd .a5, .project .word.word--menu .a.connectionEnd .a2, .project .word.word--menu .a.connectionEnd .a3, .project .word.word--menu .a.connectionEnd .a5, .contact .word.word--menu .a.connectionEnd .a2, .contact .word.word--menu .a.connectionEnd .a3, .contact .word.word--menu .a.connectionEnd .a5 {
         left: 0; }
       .about .word.word--menu .a.connectionEnd .a4, .project .word.word--menu .a.connectionEnd .a4, .contact .word.word--menu .a.connectionEnd .a4 {
-        left: calc(2px * 15); }
+        left: calc(2px * 12); }
       .about .word.word--menu .a.connectionEnd .a6, .project .word.word--menu .a.connectionEnd .a6, .contact .word.word--menu .a.connectionEnd .a6 {
-        left: calc(3px * 15); }
+        left: calc(3px * 12); }
     .about .word.word--menu .a.connectionStart, .project .word.word--menu .a.connectionStart, .contact .word.word--menu .a.connectionStart {
-      width: calc(4px * 15); }
+      width: calc(4px * 12); }
       .about .word.word--menu .a.connectionStart .a6, .project .word.word--menu .a.connectionStart .a6, .contact .word.word--menu .a.connectionStart .a6 {
         display: none; }
     .about .word.word--menu .a.noConnection, .project .word.word--menu .a.noConnection, .contact .word.word--menu .a.noConnection {
-      width: calc(3px * 15); }
+      width: calc(3px * 12); }
       .about .word.word--menu .a.noConnection .a1, .about .word.word--menu .a.noConnection .a6, .project .word.word--menu .a.noConnection .a1, .project .word.word--menu .a.noConnection .a6, .contact .word.word--menu .a.noConnection .a1, .contact .word.word--menu .a.noConnection .a6 {
         display: none; }
     .about .word.word--menu .a.topToBottom .a1, .project .word.word--menu .a.topToBottom .a1, .contact .word.word--menu .a.topToBottom .a1 {
-      top: calc(2px * 15); }
+      top: calc(2px * 12); }
   .about .word.word--menu .b, .project .word.word--menu .b, .contact .word.word--menu .b {
-    width: calc(4px * 15); }
+    width: calc(4px * 12); }
     .about .word.word--menu .b .b1, .project .word.word--menu .b .b1, .contact .word.word--menu .b .b1 {
-      left: calc(2px * 15);
-      bottom: calc(0px * 15);
+      left: calc(2px * 12);
+      bottom: calc(0px * 12);
       transition: height calc(5 * 0.03s); }
       .about .word.word--menu .b .b1.active, .project .word.word--menu .b .b1.active, .contact .word.word--menu .b .b1.active {
-        height: calc(5px * 15); }
+        height: calc(5px * 12); }
     .about .word.word--menu .b .b2, .project .word.word--menu .b .b2, .contact .word.word--menu .b .b2 {
-      top: calc(2px * 15);
-      left: calc(0px * 15);
+      top: calc(2px * 12);
+      left: calc(0px * 12);
       transition: width calc(3 * 0.03s); }
       .about .word.word--menu .b .b2.active, .project .word.word--menu .b .b2.active, .contact .word.word--menu .b .b2.active {
-        width: calc(3px * 15); }
+        width: calc(3px * 12); }
     .about .word.word--menu .b .b3, .project .word.word--menu .b .b3, .contact .word.word--menu .b .b3 {
-      top: calc(0px * 15);
+      top: calc(0px * 12);
       transition: height calc(7 * 0.03s); }
       .about .word.word--menu .b .b3.active, .project .word.word--menu .b .b3.active, .contact .word.word--menu .b .b3.active {
-        height: calc(7px * 15); }
+        height: calc(7px * 12); }
     .about .word.word--menu .b .b4, .project .word.word--menu .b .b4, .contact .word.word--menu .b .b4 {
-      bottom: calc(0px * 15);
-      left: calc(0px * 15);
+      bottom: calc(0px * 12);
+      left: calc(0px * 12);
       transition: width calc(3 * 0.03s); }
       .about .word.word--menu .b .b4.active, .project .word.word--menu .b .b4.active, .contact .word.word--menu .b .b4.active {
-        width: calc(4px * 15); }
+        width: calc(4px * 12); }
   .about .word.word--menu .o, .project .word.word--menu .o, .contact .word.word--menu .o {
-    width: calc(4px * 15);
-    bottom: calc(0px * 15); }
+    width: calc(4px * 12);
+    bottom: calc(0px * 12); }
     .about .word.word--menu .o .o1, .project .word.word--menu .o .o1, .contact .word.word--menu .o .o1 {
-      left: calc(0px * 15);
-      top: calc(2px * 15);
+      left: calc(0px * 12);
+      top: calc(2px * 12);
       transition: height calc(5 * 0.03s); }
       .about .word.word--menu .o .o1.active, .project .word.word--menu .o .o1.active, .contact .word.word--menu .o .o1.active {
-        height: calc(5px * 15); }
+        height: calc(5px * 12); }
     .about .word.word--menu .o .o2, .project .word.word--menu .o .o2, .contact .word.word--menu .o .o2 {
-      bottom: calc(0px * 15);
-      right: calc(0px * 15);
+      bottom: calc(0px * 12);
+      right: calc(0px * 12);
       transition: width calc(3 * 0.03s); }
       .about .word.word--menu .o .o2.active, .project .word.word--menu .o .o2.active, .contact .word.word--menu .o .o2.active {
-        width: calc(3px * 15); }
+        width: calc(3px * 12); }
     .about .word.word--menu .o .o3, .project .word.word--menu .o .o3, .contact .word.word--menu .o .o3 {
-      left: calc(2px * 15);
+      left: calc(2px * 12);
       bottom: 0;
       transition: height calc(5 * 0.03s); }
       .about .word.word--menu .o .o3.active, .project .word.word--menu .o .o3.active, .contact .word.word--menu .o .o3.active {
-        height: calc(5px * 15); }
+        height: calc(5px * 12); }
     .about .word.word--menu .o .o4, .project .word.word--menu .o .o4, .contact .word.word--menu .o .o4 {
-      top: calc(2px * 15);
-      left: calc(0px * 15);
+      top: calc(2px * 12);
+      left: calc(0px * 12);
       transition: width calc(4 * 0.03s); }
       .about .word.word--menu .o .o4.active, .project .word.word--menu .o .o4.active, .contact .word.word--menu .o .o4.active {
-        width: calc(3px * 15); }
+        width: calc(3px * 12); }
     .about .word.word--menu .o.noConection, .project .word.word--menu .o.noConection, .contact .word.word--menu .o.noConection {
-      width: calc(3px * 15); }
+      width: calc(3px * 12); }
       .about .word.word--menu .o.noConection .o2, .project .word.word--menu .o.noConection .o2, .contact .word.word--menu .o.noConection .o2 {
-        bottom: calc(0px * 15);
-        left: calc(0px * 15);
+        bottom: calc(0px * 12);
+        left: calc(0px * 12);
         transition: width calc(3 * 0.03s); }
         .about .word.word--menu .o.noConection .o2.active, .project .word.word--menu .o.noConection .o2.active, .contact .word.word--menu .o.noConection .o2.active {
-          width: calc(3px * 15); }
+          width: calc(3px * 12); }
   .about .word.word--menu .u, .project .word.word--menu .u, .contact .word.word--menu .u {
-    width: calc(4px * 15);
-    bottom: calc(0px * 15); }
+    width: calc(4px * 12);
+    bottom: calc(0px * 12); }
     .about .word.word--menu .u .u1, .project .word.word--menu .u .u1, .contact .word.word--menu .u .u1 {
-      left: calc(0px * 15);
-      top: calc(2px * 15);
+      left: calc(0px * 12);
+      top: calc(2px * 12);
       transition: height calc(5 * 0.03s); }
       .about .word.word--menu .u .u1.active, .project .word.word--menu .u .u1.active, .contact .word.word--menu .u .u1.active {
-        height: calc(5px * 15); }
+        height: calc(5px * 12); }
     .about .word.word--menu .u .u2, .project .word.word--menu .u .u2, .contact .word.word--menu .u .u2 {
-      bottom: calc(0px * 15);
-      right: calc(0px * 15);
+      bottom: calc(0px * 12);
+      right: calc(0px * 12);
       transition: width calc(3 * 0.03s); }
       .about .word.word--menu .u .u2.active, .project .word.word--menu .u .u2.active, .contact .word.word--menu .u .u2.active {
-        width: calc(3px * 15); }
+        width: calc(3px * 12); }
     .about .word.word--menu .u .u3, .project .word.word--menu .u .u3, .contact .word.word--menu .u .u3 {
-      left: calc(2px * 15);
+      left: calc(2px * 12);
       bottom: 0;
       transition: height calc(5 * 0.03s); }
       .about .word.word--menu .u .u3.active, .project .word.word--menu .u .u3.active, .contact .word.word--menu .u .u3.active {
-        height: calc(5px * 15); }
+        height: calc(5px * 12); }
     .about .word.word--menu .u .u4, .project .word.word--menu .u .u4, .contact .word.word--menu .u .u4 {
-      top: calc(2px * 15);
-      left: calc(0px * 15);
+      top: calc(2px * 12);
+      left: calc(0px * 12);
       transition: width calc(4 * 0.03s); }
       .about .word.word--menu .u .u4.active, .project .word.word--menu .u .u4.active, .contact .word.word--menu .u .u4.active {
-        width: calc(3px * 15); }
+        width: calc(3px * 12); }
   .about .word.word--menu .t, .project .word.word--menu .t, .contact .word.word--menu .t {
-    width: calc(3px * 15); }
+    width: calc(3px * 12); }
     .about .word.word--menu .t .t2, .project .word.word--menu .t .t2, .contact .word.word--menu .t .t2 {
       transition: width calc(3 * 0.03s);
-      top: calc(2px * 15); }
+      top: calc(2px * 12); }
       .about .word.word--menu .t .t2.active, .project .word.word--menu .t .t2.active, .contact .word.word--menu .t .t2.active {
-        width: calc(3px * 15); }
+        width: calc(3px * 12); }
     .about .word.word--menu .t .t1, .project .word.word--menu .t .t1, .contact .word.word--menu .t .t1 {
-      left: calc(1px * 15);
+      left: calc(1px * 12);
       transition: height calc(7 * 0.03s); }
       .about .word.word--menu .t .t1.active, .project .word.word--menu .t .t1.active, .contact .word.word--menu .t .t1.active {
-        height: calc(7px * 15); }
+        height: calc(7px * 12); }
   .about .word.word--menu .p, .project .word.word--menu .p, .contact .word.word--menu .p {
-    width: calc(3px * 15); }
+    width: calc(3px * 12); }
     .about .word.word--menu .p .p1, .project .word.word--menu .p .p1, .contact .word.word--menu .p .p1 {
-      left: calc(2px * 15);
-      bottom: calc(0px * 15);
+      left: calc(2px * 12);
+      bottom: calc(0px * 12);
       transition: height calc(5 * 0.03s); }
       .about .word.word--menu .p .p1.active, .project .word.word--menu .p .p1.active, .contact .word.word--menu .p .p1.active {
-        height: calc(5px * 15); }
+        height: calc(5px * 12); }
     .about .word.word--menu .p .p2, .project .word.word--menu .p .p2, .contact .word.word--menu .p .p2 {
-      top: calc(2px * 15);
-      left: calc(0px * 15);
+      top: calc(2px * 12);
+      left: calc(0px * 12);
       transition: width calc(3 * 0.03s); }
       .about .word.word--menu .p .p2.active, .project .word.word--menu .p .p2.active, .contact .word.word--menu .p .p2.active {
-        width: calc(3px * 15); }
+        width: calc(3px * 12); }
     .about .word.word--menu .p .p3, .project .word.word--menu .p .p3, .contact .word.word--menu .p .p3 {
-      top: calc(2px * 15);
+      top: calc(2px * 12);
       transition: height calc(7 * 0.03s); }
       .about .word.word--menu .p .p3.active, .project .word.word--menu .p .p3.active, .contact .word.word--menu .p .p3.active {
-        height: calc(7px * 15); }
+        height: calc(7px * 12); }
     .about .word.word--menu .p .p4, .project .word.word--menu .p .p4, .contact .word.word--menu .p .p4 {
-      bottom: calc(0px * 15);
-      left: calc(0px * 15);
+      bottom: calc(0px * 12);
+      left: calc(0px * 12);
       transition: width calc(3 * 0.03s); }
       .about .word.word--menu .p .p4.active, .project .word.word--menu .p .p4.active, .contact .word.word--menu .p .p4.active {
-        width: calc(3px * 15); }
+        width: calc(3px * 12); }
   .about .word.word--menu .r, .project .word.word--menu .r, .contact .word.word--menu .r {
-    width: calc(3px * 15); }
+    width: calc(3px * 12); }
     .about .word.word--menu .r .r1, .project .word.word--menu .r .r1, .contact .word.word--menu .r .r1 {
-      bottom: calc(0px * 15);
+      bottom: calc(0px * 12);
       transition: width calc(2 * 0.03s); }
       .about .word.word--menu .r .r1.active, .project .word.word--menu .r .r1.active, .contact .word.word--menu .r .r1.active {
-        width: calc(2px * 15); }
+        width: calc(2px * 12); }
     .about .word.word--menu .r .r2, .project .word.word--menu .r .r2, .contact .word.word--menu .r .r2 {
-      left: calc(1px * 15);
-      bottom: calc(0px * 15);
+      left: calc(1px * 12);
+      bottom: calc(0px * 12);
       transition: height calc(5 * 0.03s); }
       .about .word.word--menu .r .r2.active, .project .word.word--menu .r .r2.active, .contact .word.word--menu .r .r2.active {
-        height: calc(5px * 15); }
+        height: calc(5px * 12); }
     .about .word.word--menu .r .r3, .project .word.word--menu .r .r3, .contact .word.word--menu .r .r3 {
-      top: calc(2px * 15);
-      left: calc(1px * 15);
+      top: calc(2px * 12);
+      left: calc(1px * 12);
       transition: width calc(2 * 0.03s); }
       .about .word.word--menu .r .r3.active, .project .word.word--menu .r .r3.active, .contact .word.word--menu .r .r3.active {
-        width: calc(2px * 15); }
+        width: calc(2px * 12); }
   .about .word.word--menu .o, .project .word.word--menu .o, .contact .word.word--menu .o {
-    width: calc(4px * 15);
-    bottom: calc(0px * 15); }
+    width: calc(4px * 12);
+    bottom: calc(0px * 12); }
     .about .word.word--menu .o .o1, .project .word.word--menu .o .o1, .contact .word.word--menu .o .o1 {
-      left: calc(0px * 15);
-      top: calc(2px * 15);
+      left: calc(0px * 12);
+      top: calc(2px * 12);
       transition: height calc(5 * 0.03s); }
       .about .word.word--menu .o .o1.active, .project .word.word--menu .o .o1.active, .contact .word.word--menu .o .o1.active {
-        height: calc(5px * 15); }
+        height: calc(5px * 12); }
     .about .word.word--menu .o .o2, .project .word.word--menu .o .o2, .contact .word.word--menu .o .o2 {
-      bottom: calc(0px * 15);
-      right: calc(0px * 15);
+      bottom: calc(0px * 12);
+      right: calc(0px * 12);
       transition: width calc(3 * 0.03s); }
       .about .word.word--menu .o .o2.active, .project .word.word--menu .o .o2.active, .contact .word.word--menu .o .o2.active {
-        width: calc(3px * 15); }
+        width: calc(3px * 12); }
     .about .word.word--menu .o .o3, .project .word.word--menu .o .o3, .contact .word.word--menu .o .o3 {
-      left: calc(2px * 15);
+      left: calc(2px * 12);
       bottom: 0;
       transition: height calc(5 * 0.03s); }
       .about .word.word--menu .o .o3.active, .project .word.word--menu .o .o3.active, .contact .word.word--menu .o .o3.active {
-        height: calc(5px * 15); }
+        height: calc(5px * 12); }
     .about .word.word--menu .o .o4, .project .word.word--menu .o .o4, .contact .word.word--menu .o .o4 {
-      top: calc(2px * 15);
-      left: calc(0px * 15);
+      top: calc(2px * 12);
+      left: calc(0px * 12);
       transition: width calc(4 * 0.03s); }
       .about .word.word--menu .o .o4.active, .project .word.word--menu .o .o4.active, .contact .word.word--menu .o .o4.active {
-        width: calc(3px * 15); }
+        width: calc(3px * 12); }
     .about .word.word--menu .o.noConection, .project .word.word--menu .o.noConection, .contact .word.word--menu .o.noConection {
-      width: calc(3px * 15); }
+      width: calc(3px * 12); }
       .about .word.word--menu .o.noConection .o2, .project .word.word--menu .o.noConection .o2, .contact .word.word--menu .o.noConection .o2 {
-        bottom: calc(0px * 15);
-        left: calc(0px * 15);
+        bottom: calc(0px * 12);
+        left: calc(0px * 12);
         transition: width calc(3 * 0.03s); }
         .about .word.word--menu .o.noConection .o2.active, .project .word.word--menu .o.noConection .o2.active, .contact .word.word--menu .o.noConection .o2.active {
-          width: calc(3px * 15); }
+          width: calc(3px * 12); }
   .about .word.word--menu .j, .project .word.word--menu .j, .contact .word.word--menu .j {
-    width: calc(2px * 15);
-    left: calc(0px * 15); }
+    width: calc(2px * 12);
+    left: calc(0px * 12); }
     .about .word.word--menu .j .j1, .project .word.word--menu .j .j1, .contact .word.word--menu .j .j1 {
-      top: calc(0px * 15); }
+      top: calc(0px * 12); }
     .about .word.word--menu .j .j2, .project .word.word--menu .j .j2, .contact .word.word--menu .j .j2 {
-      top: calc(2px * 15);
+      top: calc(2px * 12);
       transition: height calc(7 * 0.03s); }
       .about .word.word--menu .j .j2.active, .project .word.word--menu .j .j2.active, .contact .word.word--menu .j .j2.active {
-        height: calc(7px * 15); }
+        height: calc(7px * 12); }
     .about .word.word--menu .j .j3, .project .word.word--menu .j .j3, .contact .word.word--menu .j .j3 {
-      top: calc(4px * 15);
+      top: calc(4px * 12);
       transition: width calc(2 * 0.03s); }
       .about .word.word--menu .j .j3.active, .project .word.word--menu .j .j3.active, .contact .word.word--menu .j .j3.active {
-        width: calc(2px * 15); }
+        width: calc(2px * 12); }
   .about .word.word--menu .e, .project .word.word--menu .e, .contact .word.word--menu .e {
-    width: calc(4px * 15); }
+    width: calc(4px * 12); }
     .about .word.word--menu .e .e1, .project .word.word--menu .e .e1, .contact .word.word--menu .e .e1 {
-      bottom: calc(2px * 15);
+      bottom: calc(2px * 12);
       transition: width calc(3 * 0.03s); }
       .about .word.word--menu .e .e1.active, .project .word.word--menu .e .e1.active, .contact .word.word--menu .e .e1.active {
-        width: calc(3px * 15); }
+        width: calc(3px * 12); }
     .about .word.word--menu .e .e2, .project .word.word--menu .e .e2, .contact .word.word--menu .e .e2 {
-      left: calc(2px * 15);
-      top: calc(2px * 15);
+      left: calc(2px * 12);
+      top: calc(2px * 12);
       transition: height calc(5 * 0.03s); }
       .about .word.word--menu .e .e2.active, .project .word.word--menu .e .e2.active, .contact .word.word--menu .e .e2.active {
-        height: calc(3px * 15); }
+        height: calc(3px * 12); }
     .about .word.word--menu .e .e3, .project .word.word--menu .e .e3, .contact .word.word--menu .e .e3 {
-      bottom: calc(4px * 15);
-      top: calc(2px * 15);
+      bottom: calc(4px * 12);
+      top: calc(2px * 12);
       transition: width calc(3 * 0.03s); }
       .about .word.word--menu .e .e3.active, .project .word.word--menu .e .e3.active, .contact .word.word--menu .e .e3.active {
-        width: calc(3px * 15); }
+        width: calc(3px * 12); }
     .about .word.word--menu .e .e4, .project .word.word--menu .e .e4, .contact .word.word--menu .e .e4 {
-      bottom: calc(0px * 15);
+      bottom: calc(0px * 12);
       transition: height calc(5 * 0.03s); }
       .about .word.word--menu .e .e4.active, .project .word.word--menu .e .e4.active, .contact .word.word--menu .e .e4.active {
-        height: calc(5px * 15); }
+        height: calc(5px * 12); }
     .about .word.word--menu .e .e5, .project .word.word--menu .e .e5, .contact .word.word--menu .e .e5 {
-      bottom: calc(0px * 15);
+      bottom: calc(0px * 12);
       transition: width calc(4 * 0.03s); }
       .about .word.word--menu .e .e5.active, .project .word.word--menu .e .e5.active, .contact .word.word--menu .e .e5.active {
-        width: calc(7px * 15); }
+        width: calc(7px * 12); }
   .about .word.word--menu .c, .project .word.word--menu .c, .contact .word.word--menu .c {
-    width: calc(4px * 15); }
+    width: calc(4px * 12); }
     .about .word.word--menu .c .c1, .project .word.word--menu .c .c1, .contact .word.word--menu .c .c1 {
-      top: calc(2px * 15);
-      right: calc(1px * 15);
+      top: calc(2px * 12);
+      right: calc(1px * 12);
       transition: width calc(3 * 0.03s); }
       .about .word.word--menu .c .c1.active, .project .word.word--menu .c .c1.active, .contact .word.word--menu .c .c1.active {
-        width: calc(3px * 15); }
+        width: calc(3px * 12); }
     .about .word.word--menu .c .c2, .project .word.word--menu .c .c2, .contact .word.word--menu .c .c2 {
-      top: calc(2px * 15);
+      top: calc(2px * 12);
       transition: height calc(5 * 0.03s); }
       .about .word.word--menu .c .c2.active, .project .word.word--menu .c .c2.active, .contact .word.word--menu .c .c2.active {
-        height: calc(5px * 15); }
+        height: calc(5px * 12); }
     .about .word.word--menu .c .c3, .project .word.word--menu .c .c3, .contact .word.word--menu .c .c3 {
-      bottom: calc(0px * 15);
+      bottom: calc(0px * 12);
       transition: width calc(4 * 0.03s); }
       .about .word.word--menu .c .c3.active, .project .word.word--menu .c .c3.active, .contact .word.word--menu .c .c3.active {
-        width: calc(4px * 15); }
+        width: calc(4px * 12); }
   .about .word.word--menu .t, .project .word.word--menu .t, .contact .word.word--menu .t {
-    width: calc(3px * 15); }
+    width: calc(3px * 12); }
     .about .word.word--menu .t .t2, .project .word.word--menu .t .t2, .contact .word.word--menu .t .t2 {
       transition: width calc(3 * 0.03s);
-      top: calc(2px * 15); }
+      top: calc(2px * 12); }
       .about .word.word--menu .t .t2.active, .project .word.word--menu .t .t2.active, .contact .word.word--menu .t .t2.active {
-        width: calc(3px * 15); }
+        width: calc(3px * 12); }
     .about .word.word--menu .t .t1, .project .word.word--menu .t .t1, .contact .word.word--menu .t .t1 {
-      left: calc(1px * 15);
+      left: calc(1px * 12);
       transition: height calc(7 * 0.03s); }
       .about .word.word--menu .t .t1.active, .project .word.word--menu .t .t1.active, .contact .word.word--menu .t .t1.active {
-        height: calc(7px * 15); }
+        height: calc(7px * 12); }
   .about .word.word--menu .s, .project .word.word--menu .s, .contact .word.word--menu .s {
-    width: calc(4px * 15); }
+    width: calc(4px * 12); }
     .about .word.word--menu .s .s1, .project .word.word--menu .s .s1, .contact .word.word--menu .s .s1 {
-      bottom: calc(0px * 15);
+      bottom: calc(0px * 12);
       transition: width calc(4 * 0.03s); }
       .about .word.word--menu .s .s1.active, .project .word.word--menu .s .s1.active, .contact .word.word--menu .s .s1.active {
-        width: calc(4px * 15); }
+        width: calc(4px * 12); }
     .about .word.word--menu .s .s2, .project .word.word--menu .s .s2, .contact .word.word--menu .s .s2 {
-      left: calc(3px * 15);
-      bottom: calc(0px * 15);
+      left: calc(3px * 12);
+      bottom: calc(0px * 12);
       transition: height calc(3 * 0.03s); }
       .about .word.word--menu .s .s2.active, .project .word.word--menu .s .s2.active, .contact .word.word--menu .s .s2.active {
-        height: calc(3px * 15); }
+        height: calc(3px * 12); }
     .about .word.word--menu .s .s3, .project .word.word--menu .s .s3, .contact .word.word--menu .s .s3 {
-      bottom: calc(2px * 15);
+      bottom: calc(2px * 12);
       right: 0;
       transition: width calc(3 * 0.03s); }
       .about .word.word--menu .s .s3.active, .project .word.word--menu .s .s3.active, .contact .word.word--menu .s .s3.active {
-        width: calc(3px * 15); }
+        width: calc(3px * 12); }
     .about .word.word--menu .s .s4, .project .word.word--menu .s .s4, .contact .word.word--menu .s .s4 {
-      bottom: calc(2px * 15);
-      left: calc(1px * 15);
+      bottom: calc(2px * 12);
+      left: calc(1px * 12);
       transition: height calc(3 * 0.03s); }
       .about .word.word--menu .s .s4.active, .project .word.word--menu .s .s4.active, .contact .word.word--menu .s .s4.active {
-        height: calc(3px * 15); }
+        height: calc(3px * 12); }
     .about .word.word--menu .s .s5, .project .word.word--menu .s .s5, .contact .word.word--menu .s .s5 {
-      top: calc(2px * 15);
-      left: calc(1px * 15);
+      top: calc(2px * 12);
+      left: calc(1px * 12);
       transition: width calc(3 * 0.03s); }
       .about .word.word--menu .s .s5.active, .project .word.word--menu .s .s5.active, .contact .word.word--menu .s .s5.active {
-        width: calc(3px * 15); }
+        width: calc(3px * 12); }
   .about .word.word--menu .c, .project .word.word--menu .c, .contact .word.word--menu .c {
-    width: calc(4px * 15); }
+    width: calc(4px * 12); }
     .about .word.word--menu .c .c1, .project .word.word--menu .c .c1, .contact .word.word--menu .c .c1 {
-      top: calc(2px * 15);
-      right: calc(1px * 15);
+      top: calc(2px * 12);
+      right: calc(1px * 12);
       transition: width calc(3 * 0.03s); }
       .about .word.word--menu .c .c1.active, .project .word.word--menu .c .c1.active, .contact .word.word--menu .c .c1.active {
-        width: calc(3px * 15); }
+        width: calc(3px * 12); }
     .about .word.word--menu .c .c2, .project .word.word--menu .c .c2, .contact .word.word--menu .c .c2 {
-      top: calc(2px * 15);
+      top: calc(2px * 12);
       transition: height calc(5 * 0.03s); }
       .about .word.word--menu .c .c2.active, .project .word.word--menu .c .c2.active, .contact .word.word--menu .c .c2.active {
-        height: calc(5px * 15); }
+        height: calc(5px * 12); }
     .about .word.word--menu .c .c3, .project .word.word--menu .c .c3, .contact .word.word--menu .c .c3 {
-      bottom: calc(0px * 15);
+      bottom: calc(0px * 12);
       transition: width calc(4 * 0.03s); }
       .about .word.word--menu .c .c3.active, .project .word.word--menu .c .c3.active, .contact .word.word--menu .c .c3.active {
-        width: calc(4px * 15); }
+        width: calc(4px * 12); }
   .about .word.word--menu .o, .project .word.word--menu .o, .contact .word.word--menu .o {
-    width: calc(4px * 15);
-    bottom: calc(0px * 15); }
+    width: calc(4px * 12);
+    bottom: calc(0px * 12); }
     .about .word.word--menu .o .o1, .project .word.word--menu .o .o1, .contact .word.word--menu .o .o1 {
-      left: calc(0px * 15);
-      top: calc(2px * 15);
+      left: calc(0px * 12);
+      top: calc(2px * 12);
       transition: height calc(5 * 0.03s); }
       .about .word.word--menu .o .o1.active, .project .word.word--menu .o .o1.active, .contact .word.word--menu .o .o1.active {
-        height: calc(5px * 15); }
+        height: calc(5px * 12); }
     .about .word.word--menu .o .o2, .project .word.word--menu .o .o2, .contact .word.word--menu .o .o2 {
-      bottom: calc(0px * 15);
-      right: calc(0px * 15);
+      bottom: calc(0px * 12);
+      right: calc(0px * 12);
       transition: width calc(3 * 0.03s); }
       .about .word.word--menu .o .o2.active, .project .word.word--menu .o .o2.active, .contact .word.word--menu .o .o2.active {
-        width: calc(3px * 15); }
+        width: calc(3px * 12); }
     .about .word.word--menu .o .o3, .project .word.word--menu .o .o3, .contact .word.word--menu .o .o3 {
-      left: calc(2px * 15);
+      left: calc(2px * 12);
       bottom: 0;
       transition: height calc(5 * 0.03s); }
       .about .word.word--menu .o .o3.active, .project .word.word--menu .o .o3.active, .contact .word.word--menu .o .o3.active {
-        height: calc(5px * 15); }
+        height: calc(5px * 12); }
     .about .word.word--menu .o .o4, .project .word.word--menu .o .o4, .contact .word.word--menu .o .o4 {
-      top: calc(2px * 15);
-      left: calc(0px * 15);
+      top: calc(2px * 12);
+      left: calc(0px * 12);
       transition: width calc(4 * 0.03s); }
       .about .word.word--menu .o .o4.active, .project .word.word--menu .o .o4.active, .contact .word.word--menu .o .o4.active {
-        width: calc(3px * 15); }
+        width: calc(3px * 12); }
     .about .word.word--menu .o.noConection, .project .word.word--menu .o.noConection, .contact .word.word--menu .o.noConection {
-      width: calc(3px * 15); }
+      width: calc(3px * 12); }
       .about .word.word--menu .o.noConection .o2, .project .word.word--menu .o.noConection .o2, .contact .word.word--menu .o.noConection .o2 {
-        bottom: calc(0px * 15);
-        left: calc(0px * 15);
+        bottom: calc(0px * 12);
+        left: calc(0px * 12);
         transition: width calc(3 * 0.03s); }
         .about .word.word--menu .o.noConection .o2.active, .project .word.word--menu .o.noConection .o2.active, .contact .word.word--menu .o.noConection .o2.active {
-          width: calc(3px * 15); }
+          width: calc(3px * 12); }
   .about .word.word--menu .n, .project .word.word--menu .n, .contact .word.word--menu .n {
-    width: calc(4px * 15); }
+    width: calc(4px * 12); }
     .about .word.word--menu .n .n1, .project .word.word--menu .n .n1, .contact .word.word--menu .n .n1 {
-      bottom: calc(0px * 15);
+      bottom: calc(0px * 12);
       transition: width calc(2 * 0.03s); }
       .about .word.word--menu .n .n1.active, .project .word.word--menu .n .n1.active, .contact .word.word--menu .n .n1.active {
-        width: calc(2px * 15); }
+        width: calc(2px * 12); }
     .about .word.word--menu .n .n2, .project .word.word--menu .n .n2, .contact .word.word--menu .n .n2 {
-      left: calc(1px * 15);
-      bottom: calc(0px * 15);
+      left: calc(1px * 12);
+      bottom: calc(0px * 12);
       transition: height calc(5 * 0.03s); }
       .about .word.word--menu .n .n2.active, .project .word.word--menu .n .n2.active, .contact .word.word--menu .n .n2.active {
-        height: calc(5px * 15); }
+        height: calc(5px * 12); }
     .about .word.word--menu .n .n3, .project .word.word--menu .n .n3, .contact .word.word--menu .n .n3 {
-      bottom: calc(4px * 15);
-      left: calc(1px * 15);
+      bottom: calc(4px * 12);
+      left: calc(1px * 12);
       transition: width calc(3 * 0.03s); }
       .about .word.word--menu .n .n3.active, .project .word.word--menu .n .n3.active, .contact .word.word--menu .n .n3.active {
-        width: calc(3px * 15); }
+        width: calc(3px * 12); }
     .about .word.word--menu .n .n4, .project .word.word--menu .n .n4, .contact .word.word--menu .n .n4 {
-      left: calc(3px * 15);
-      top: calc(2px * 15);
+      left: calc(3px * 12);
+      top: calc(2px * 12);
       transition: height calc(5 * 0.03s); }
       .about .word.word--menu .n .n4.active, .project .word.word--menu .n .n4.active, .contact .word.word--menu .n .n4.active {
-        height: calc(5px * 15); }
+        height: calc(5px * 12); }
   .about .word.word--menu .t, .project .word.word--menu .t, .contact .word.word--menu .t {
-    width: calc(3px * 15); }
+    width: calc(3px * 12); }
     .about .word.word--menu .t .t2, .project .word.word--menu .t .t2, .contact .word.word--menu .t .t2 {
       transition: width calc(3 * 0.03s);
-      top: calc(2px * 15); }
+      top: calc(2px * 12); }
       .about .word.word--menu .t .t2.active, .project .word.word--menu .t .t2.active, .contact .word.word--menu .t .t2.active {
-        width: calc(3px * 15); }
+        width: calc(3px * 12); }
     .about .word.word--menu .t .t1, .project .word.word--menu .t .t1, .contact .word.word--menu .t .t1 {
-      left: calc(1px * 15);
+      left: calc(1px * 12);
       transition: height calc(7 * 0.03s); }
       .about .word.word--menu .t .t1.active, .project .word.word--menu .t .t1.active, .contact .word.word--menu .t .t1.active {
-        height: calc(7px * 15); }
+        height: calc(7px * 12); }
   .about .word.word--menu .a, .project .word.word--menu .a, .contact .word.word--menu .a {
-    width: calc(5px * 15); }
+    width: calc(5px * 12); }
     .about .word.word--menu .a .a1, .project .word.word--menu .a .a1, .contact .word.word--menu .a .a1 {
-      bottom: calc(0px * 15);
+      bottom: calc(0px * 12);
       transition: width calc(2 * 0.03s); }
       .about .word.word--menu .a .a1.active, .project .word.word--menu .a .a1.active, .contact .word.word--menu .a .a1.active {
-        width: calc(2px * 15); }
+        width: calc(2px * 12); }
     .about .word.word--menu .a .a2, .project .word.word--menu .a .a2, .contact .word.word--menu .a .a2 {
-      left: calc(1px * 15);
-      bottom: calc(0px * 15);
+      left: calc(1px * 12);
+      bottom: calc(0px * 12);
       transition: height calc(5 * 0.03s); }
       .about .word.word--menu .a .a2.active, .project .word.word--menu .a .a2.active, .contact .word.word--menu .a .a2.active {
-        height: calc(5px * 15); }
+        height: calc(5px * 12); }
     .about .word.word--menu .a .a3, .project .word.word--menu .a .a3, .contact .word.word--menu .a .a3 {
-      bottom: calc(4px * 15);
-      left: calc(1px * 15);
+      bottom: calc(4px * 12);
+      left: calc(1px * 12);
       transition: width calc(3 * 0.03s); }
       .about .word.word--menu .a .a3.active, .project .word.word--menu .a .a3.active, .contact .word.word--menu .a .a3.active {
-        width: calc(3px * 15); }
+        width: calc(3px * 12); }
     .about .word.word--menu .a .a4, .project .word.word--menu .a .a4, .contact .word.word--menu .a .a4 {
-      left: calc(3px * 15);
-      top: calc(2px * 15);
+      left: calc(3px * 12);
+      top: calc(2px * 12);
       transition: height calc(5 * 0.03s); }
       .about .word.word--menu .a .a4.active, .project .word.word--menu .a .a4.active, .contact .word.word--menu .a .a4.active {
-        height: calc(5px * 15); }
+        height: calc(5px * 12); }
     .about .word.word--menu .a .a5, .project .word.word--menu .a .a5, .contact .word.word--menu .a .a5 {
-      bottom: calc(2px * 15);
-      left: calc(1px * 15);
+      bottom: calc(2px * 12);
+      left: calc(1px * 12);
       transition: width calc(3 * 0.03s); }
       .about .word.word--menu .a .a5.active, .project .word.word--menu .a .a5.active, .contact .word.word--menu .a .a5.active {
-        width: calc(3px * 15); }
+        width: calc(3px * 12); }
     .about .word.word--menu .a .a6, .project .word.word--menu .a .a6, .contact .word.word--menu .a .a6 {
-      bottom: calc(0px * 15);
-      left: calc(4px * 15);
+      bottom: calc(0px * 12);
+      left: calc(4px * 12);
       transition: width calc(1 * 0.03s); }
       .about .word.word--menu .a .a6.active, .project .word.word--menu .a .a6.active, .contact .word.word--menu .a .a6.active {
-        width: calc(1px * 15); }
+        width: calc(1px * 12); }
     .about .word.word--menu .a.connectionEnd, .project .word.word--menu .a.connectionEnd, .contact .word.word--menu .a.connectionEnd {
-      width: calc(4px * 15); }
+      width: calc(4px * 12); }
       .about .word.word--menu .a.connectionEnd .a1, .project .word.word--menu .a.connectionEnd .a1, .contact .word.word--menu .a.connectionEnd .a1 {
         display: none; }
       .about .word.word--menu .a.connectionEnd .a2, .about .word.word--menu .a.connectionEnd .a3, .about .word.word--menu .a.connectionEnd .a5, .project .word.word--menu .a.connectionEnd .a2, .project .word.word--menu .a.connectionEnd .a3, .project .word.word--menu .a.connectionEnd .a5, .contact .word.word--menu .a.connectionEnd .a2, .contact .word.word--menu .a.connectionEnd .a3, .contact .word.word--menu .a.connectionEnd .a5 {
         left: 0; }
       .about .word.word--menu .a.connectionEnd .a4, .project .word.word--menu .a.connectionEnd .a4, .contact .word.word--menu .a.connectionEnd .a4 {
-        left: calc(2px * 15); }
+        left: calc(2px * 12); }
       .about .word.word--menu .a.connectionEnd .a6, .project .word.word--menu .a.connectionEnd .a6, .contact .word.word--menu .a.connectionEnd .a6 {
-        left: calc(3px * 15); }
+        left: calc(3px * 12); }
     .about .word.word--menu .a.connectionStart, .project .word.word--menu .a.connectionStart, .contact .word.word--menu .a.connectionStart {
-      width: calc(4px * 15); }
+      width: calc(4px * 12); }
       .about .word.word--menu .a.connectionStart .a6, .project .word.word--menu .a.connectionStart .a6, .contact .word.word--menu .a.connectionStart .a6 {
         display: none; }
     .about .word.word--menu .a.noConnection, .project .word.word--menu .a.noConnection, .contact .word.word--menu .a.noConnection {
-      width: calc(3px * 15); }
+      width: calc(3px * 12); }
       .about .word.word--menu .a.noConnection .a1, .about .word.word--menu .a.noConnection .a6, .project .word.word--menu .a.noConnection .a1, .project .word.word--menu .a.noConnection .a6, .contact .word.word--menu .a.noConnection .a1, .contact .word.word--menu .a.noConnection .a6 {
         display: none; }
     .about .word.word--menu .a.topToBottom .a1, .project .word.word--menu .a.topToBottom .a1, .contact .word.word--menu .a.topToBottom .a1 {
-      top: calc(2px * 15); }
+      top: calc(2px * 12); }
   .about .word.word--menu .c, .project .word.word--menu .c, .contact .word.word--menu .c {
-    width: calc(4px * 15); }
+    width: calc(4px * 12); }
     .about .word.word--menu .c .c1, .project .word.word--menu .c .c1, .contact .word.word--menu .c .c1 {
-      top: calc(2px * 15);
-      right: calc(1px * 15);
+      top: calc(2px * 12);
+      right: calc(1px * 12);
       transition: width calc(3 * 0.03s); }
       .about .word.word--menu .c .c1.active, .project .word.word--menu .c .c1.active, .contact .word.word--menu .c .c1.active {
-        width: calc(3px * 15); }
+        width: calc(3px * 12); }
     .about .word.word--menu .c .c2, .project .word.word--menu .c .c2, .contact .word.word--menu .c .c2 {
-      top: calc(2px * 15);
+      top: calc(2px * 12);
       transition: height calc(5 * 0.03s); }
       .about .word.word--menu .c .c2.active, .project .word.word--menu .c .c2.active, .contact .word.word--menu .c .c2.active {
-        height: calc(5px * 15); }
+        height: calc(5px * 12); }
     .about .word.word--menu .c .c3, .project .word.word--menu .c .c3, .contact .word.word--menu .c .c3 {
-      bottom: calc(0px * 15);
+      bottom: calc(0px * 12);
       transition: width calc(4 * 0.03s); }
       .about .word.word--menu .c .c3.active, .project .word.word--menu .c .c3.active, .contact .word.word--menu .c .c3.active {
-        width: calc(4px * 15); }
+        width: calc(4px * 12); }
   .about .word.word--menu .t, .project .word.word--menu .t, .contact .word.word--menu .t {
-    width: calc(3px * 15); }
+    width: calc(3px * 12); }
     .about .word.word--menu .t .t2, .project .word.word--menu .t .t2, .contact .word.word--menu .t .t2 {
       transition: width calc(3 * 0.03s);
-      top: calc(2px * 15); }
+      top: calc(2px * 12); }
       .about .word.word--menu .t .t2.active, .project .word.word--menu .t .t2.active, .contact .word.word--menu .t .t2.active {
-        width: calc(3px * 15); }
+        width: calc(3px * 12); }
     .about .word.word--menu .t .t1, .project .word.word--menu .t .t1, .contact .word.word--menu .t .t1 {
-      left: calc(1px * 15);
+      left: calc(1px * 12);
       transition: height calc(7 * 0.03s); }
       .about .word.word--menu .t .t1.active, .project .word.word--menu .t .t1.active, .contact .word.word--menu .t .t1.active {
-        height: calc(7px * 15); }
+        height: calc(7px * 12); }
 
 .contact {
   padding-bottom: 50px; }
   .contact .word.word--menu .letter {
-    height: calc(7px * 15); }
+    height: calc(7px * 12); }
   .contact a {
     color: #fff; }
 
@@ -2302,6 +2304,9 @@ nav .word.word--menu {
   right: calc(100% - (11px * 50));
   height: calc(1px * 50);
   width: calc(1px * 50); }
+  @media screen and (max-width: 639px) {
+    .christinastephan__i .nav-i {
+      display: none; } }
   .christinastephan__i .nav-i.active-nav {
     position: fixed;
     right: calc(-0.3px * 50);

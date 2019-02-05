@@ -7,6 +7,9 @@
     right:calc(100% - (11px * #{$size}));
     height:calc(1px * #{$size});
     width:calc(1px * #{$size});
+    @media screen and (max-width: 639px) {
+      display: none;
+    }
     &.active-nav{
       position: fixed;
       right: calc(-0.3px * #{$size});
