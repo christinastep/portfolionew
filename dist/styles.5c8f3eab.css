@@ -163,6 +163,9 @@ a {
         margin-right: calc(2px * 50);
         margin-left: calc(2px * 50);
         position: relative; } }
+  @media screen and (max-width: 639px) {
+    .wrapper.wrapper--products {
+      margin-top: calc(3px * 50); } }
 
 @media screen and (min-width: 640px) {
   .colum {
@@ -355,6 +358,14 @@ section {
   to {
     transform: rotate(360deg); } }
 
+@media screen and (max-width: 639px) {
+  .botton--project {
+    color: white !important;
+    background-color: red;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center; } }
+
 @media screen and (min-width: 640px) {
   .wrapper--about {
     margin-top: -100vh;
@@ -460,7 +471,7 @@ body {
   .box--product__description__long.active {
     display: block; }
   .box--product__description__long a {
-    margin-top: 10px; }
+    margin-top: 40px; }
 
 .word {
   position: relative;
