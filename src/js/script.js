@@ -99,7 +99,7 @@ if (window.matchMedia('(max-width: 639px)').matches) {
 
 //// letter ////
 var box = document.querySelectorAll('.box');
-var words = ["about", "projects", "contacts", "about", "projects", "contacts"];
+var words = ["about", "projects", "contacts", "about", "projects","contacts"];
 
 for (let j = 0; j < words.length; j++) {
   
