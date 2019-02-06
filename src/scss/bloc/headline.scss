@@ -1,139 +1,658 @@
-.p--2{
-  left:calc(0px * #{$size});
-  .p1{
-    transition-delay: calc(8 * #{$speed});
-    bottom:auto;
-    top:0;
-  }
-  .p2{
-    transition-delay:calc(5 * #{$speed});
-    right:auto;
-    left:0;
-  }
-  .p3{
-    transition-delay:calc(0 * #{$speed});
-    top:auto;
-    bottom:0;
-  }
-}
-.r--2{
-  left:calc(0px * #{$size});
-  .r1{
-    transition-delay:calc(2 * #{$speed});
-    &.active{
-       width:calc(4px * #{$size});
-    }
-  }
-  .r2{
-    transition-delay:calc(7 * #{$speed});
-    left:calc(4px * #{$size});
-  }
-  .r3{
-    transition-delay:calc(12 * #{$speed});
-    left:calc(4px * #{$size});
-    &.active{
-      width:calc(6px * #{$size});
-    }
-  }
-}
-.o--1{
-  left:calc(4px * #{$size});
-  .o1{
-    transition-delay:calc(16 * #{$speed});
-    bottom:0;
-  }
-  .o2{
-    transition-delay:calc(21 * #{$speed});
-    bottom:0;
-  }
-  .o3{
-    transition-delay:calc(24 * #{$speed});
-    bottom:0;
-  }
-  .o4{
-    transition-delay:calc(29 * #{$speed});
-  }
-}
-.j--1{
-  left:calc(10px * #{$size});
-  .j1{
-    transition-delay:calc(34 * #{$speed});
-  }
-  .j2{
-    transition-delay:calc(34 * #{$speed});
-  }
-  .j3{
-    transition-delay:calc(36 * #{$speed});
-  }
-}
+$size: 12;
+$speed: 0.01s;
 
-.e--2{
-  left:calc(12px * #{$size});
-  .e2{
-    transition-delay:calc(41 * #{$speed});
+.box{
+  margin-top: 0px;
+  display:flex;
+  flex-wrap:wrap;
+  margin-bottom: 10px;
+
+  .letterCenter{
+    left:calc(100% * 0.5 - (0.5px * #{$size}));
   }
-  .e1{
-    transition-delay:calc(44 * #{$speed});
-  }
-  .e4{
-    transition-delay:calc(48 * #{$speed});
-  }
-  .e5{
-    transition-delay:calc(52 * #{$speed});
-  }
-}
-.c--2{
-  left:calc(16px * #{$size});
-  .c2{
-    top:auto;
-    bottom:0;
-    transition-delay:calc(59 * #{$speed});
-  }
-  .c3{
-    top:0;
-    bottom:auto;
-    transition-delay:calc(63 * #{$speed});
-    &.active{
-      width:calc(9px * #{$size});
+
+  .letter{
+    margin-bottom: 10px;
+    position: relative;
+    height:calc(7px * #{$size});
+    transition: all 1s;
+    margin-right: 10px;
+    .letter__elemnt{
+      width: calc(0px * #{$size});
+      height:calc(0px * #{$size});
+      position: absolute;
+      display: block;
+      background-color: #000;
+      transition-timing-function:linear !important;
+      width: calc(1px * #{$size});
+      height:calc(1px * #{$size});
     }
   }
 }
 
-.t--3{
-   left:calc(20px * #{$size});
-  .t1{
-    transition-delay:calc(66 * #{$speed});
-   }
-  .t2{
-    transition:width calc(3 * #{$speed});
-    transition-delay:calc(66 * #{$speed});
-    &.active{
+.box .letter .letter__elemnt.active{
+  width: calc(1px * 12);
+  height:calc(1px * 12);
+}
+
+
+.box{
+  height:calc(7px * 12);
+  margin-bottom: calc(2px * 12);
+  @media screen and (max-width: 639px) {
+    width: 100%;
+    margin-left: -25px;
+  }
+  cursor: pointer;
+  .letter{
+    @media screen and (min-width: 640px) {
+      height:calc(10px * 12);
+    }
+    transition: height 0.3s;
+
+    &:hover{
+      height:calc(10px * 12);
+    }
+    &.animationActive{
+      height:calc(7px * 12);
+    }
+    .letter__elemnt{
+      background-color:white;
+    }
+  }
+} 
+
+.box{
+  .letter{
+    .letter__elemnt{
+      &.letterStart, &.letterLeft{
+        left:calc(0px * #{$size});
+      }
+      &.letterEnd, &.letterRight{
+        right:calc(0px * #{$size});
+      }
+      &.letterStart, &.letterEnd{
+        bottom:0;
+        transition:width calc(1 * #{$speed});
+        &.active{
+          width:calc(1px * #{$size});
+        }
+      }
+    }
+    /*&.crypto{
+      height:calc(12px * #{$size});
+    }*/
+    &.letter1{
+      width:calc(1px * #{$size});
+      &.connectionEnd{
+        width:calc(2px * #{$size});
+      }
+    }
+    &.letter2{
+      width:calc(2px * #{$size});
+      &.connectionEnd{
+        width:calc(2px * #{$size});
+        .letterEnd{
+          width:calc(0px * #{$size}); 
+        }
+      }
+    }
+    &.letter3{
+      width:calc(3px * #{$size});    
+      &.connectionEnd{
+        width:calc(4px * #{$size});
+      }
+    }
+    &.letter5{
+      width:calc(5px * #{$size});
+      &.connectionEnd{
+        width:calc(6px * #{$size});
+      }
+    }
+    
+    &.connectionEnd{
+      margin-right:0px;
+      .letterLeft{
+        left:calc(0px * #{$size});
+      }
+      .letterRight{
+        right:calc(1px * #{$size});
+      }
+      .letterCenter{
+        right:calc(100% * 0.5 ) !important;
+        left:auto;
+      } 
+    }
+  }
+
+  /**********
+  LETTER/SPECIAL BEHAVIOR
+  *******/
+
+
+  .f + .letter, .r + .letter{
+    &:not(.allConnection){
+      .letterStart{
+        width:calc(0px * #{$size});
+      }
+    }
+  }
+
+  .f, .r, .t{
+    .letterEnd{
+      display:none;
+    }
+    &.allConnection,.conectionEnd{
+      .letterEnd{
+        display:block;
+      }
+    }
+  }
+
+  /**********
+  LETTER/SIGNS
+  *******/
+
+  .space{
+    width:calc(2.5px * #{$size});
+  }
+
+  .point{
+    .point1{
+      bottom:calc(0px * #{$size});
+      height:calc(1px * #{$size});
+    }
+  }
+
+  .douplePoint{
+    .douplePoint1{
+      bottom:calc(0px * #{$size});
+      height:calc(1px * #{$size});
+    }
+    .douplePoint2{
+      top:calc(4px * #{$size});
+      height:calc(1px * #{$size});
+    }
+  }
+
+  .comma{
+    .comma1{
+      height:calc(2px * #{$size});
+      bottom:calc(-1px * #{$size});
+    }
+  }
+
+  .a{
+    .a2{
+      bottom:calc(0px * #{$size});
+      height:calc(5px * #{$size});
+    }
+    .a3{
+      bottom:calc(4px * #{$size});
       width:calc(3px * #{$size});
+    }
+    .a4{
       top:calc(2px * #{$size});
-      left:calc(-1px * #{$size});
+      height:calc(5px * #{$size});
     }
-  }
-}
+    .a5{
+      bottom:calc(2px * #{$size});
+      width: calc(3px * #{$size});
+    }    
+  } 
 
-.s--3{
-  left:calc(20px * #{$size});
-  .s1{
-    transition-delay: calc(72 * #{$speed});
+  .b{
+    .b2{
+      bottom:calc(0px * #{$size});
+      height:calc(7px * #{$size});
+    }
+    .b3{
+      bottom:calc(0px * #{$size});
+      width: calc(3px * #{$size});
+    }
+    .b4{
+      top:calc(2px * #{$size});
+      height:calc(5px * #{$size});
+    }
+    .b5{
+      top:calc(2px * #{$size});
+      width: calc(3px * #{$size});
+    }
+    
   }
-  .s2{
-    transition-delay: calc(76 * #{$speed});
+  
+
+  .c{
+    .c2{
+      bottom:calc(0px * #{$size});
+      height:calc(5px * #{$size});
+    }
+    .c3{
+      top:calc(2px * #{$size});
+      width: calc(3px * #{$size});
+    }
+    .c4{
+      bottom:calc(0px * #{$size});
+      width: calc(3px * #{$size});
+    }  
+  } 
+
+  .d{
+    .d2{
+      top:calc(2px * #{$size});
+      height:calc(5px * #{$size});
+    }
+    .d3{
+      bottom:calc(0px * #{$size});
+      width: calc(3px * #{$size});
+    }
+    .d4{
+      bottom:calc(0px * #{$size});
+      height:calc(7px * #{$size});
+    }
+    .d5{
+      top:calc(2px * #{$size});
+      width: calc(3px * #{$size});
+    }
+    
   }
-  .s3{
-    transition-delay: calc(79 * #{$speed});
+  
+
+  .e{
+    .e2{
+      bottom:calc(0px * #{$size});
+      height:calc(5px * #{$size});
+    }
+    .e3{
+      bottom:calc(4px * #{$size});
+      width: calc(3px * #{$size});
+    }
+    .e4{
+      top:calc(2px * #{$size});
+      height:calc(3px * #{$size});
+    }
+    .e5{
+      bottom:calc(2px * #{$size});
+      width: calc(3px * #{$size});
+    }
+    .e6{
+      bottom:calc(0px * #{$size});
+      width: calc(3px * #{$size});
+    }
+    
   }
-  .s4{
-    transition-delay: calc(71 * #{$speed});
-  }
-  .s5{
-    transition:height calc(3 * #{$speed});
-    transition-delay: calc(82 * #{$speed});
-    &.active{
-      width:calc(3px * #{$size});
+  
+
+  .f{
+    .f2{
+      bottom:calc(0px * #{$size});
+      height:calc(7px * #{$size});
+    }
+    .f3{
+      top:calc(2px * #{$size});
+      width: calc(2px * #{$size});
+    }
+    .f4{
+      top:calc(0px * #{$size});
+      width: calc(2px * #{$size});
     }
   }
+  
+
+  .g{
+    .g2{
+      top:calc(2px * #{$size});
+      height:calc(5px * #{$size});
+    }
+    .g3{
+      bottom:calc(0px * #{$size});
+      width: calc(3px * #{$size});
+    }
+    .g4{
+      top:calc(2px * #{$size});
+      height:calc(7px * #{$size});
+    }
+    .g5{
+      top:calc(2px * #{$size});
+      width: calc(3px * #{$size});
+    }
+    .g6{
+      bottom:calc(-2px * #{$size});
+      width: calc(3px * #{$size});
+    }
+    
+  }
+  
+
+  .h{
+    .h2{
+      bottom:calc(0px * #{$size});
+      height:calc(7px * #{$size});
+    }
+    .h4{
+      top:calc(2px * #{$size});
+      height:calc(5px * #{$size});
+    }
+    .h5{
+      top:calc(2px * #{$size});
+      width: calc(3px * #{$size});
+    }
+  }
+
+  .i{
+    .i2{
+      top:calc(0px * #{$size});
+      height:calc(1px * #{$size});
+    }
+    .i3{
+      bottom:calc(0px * #{$size});
+      height:calc(5px * #{$size});
+    }
+  }
+
+  .j{
+    .j4{
+      top:calc(2px * #{$size});
+      height:calc(7px * #{$size});
+    }
+    .j6{
+      bottom:calc(-2px * #{$size});
+      width: calc(2px * #{$size});
+    }
+  }
+  
+
+  .k{
+    .k2{
+      bottom:calc(0px * #{$size});
+      height:calc(7px * #{$size});
+    }
+    .k4{
+      top:calc(2px * #{$size});
+      height:calc(5px * #{$size});
+    }
+    .k5{
+      bottom:calc(2px * #{$size});
+      width: calc(3px * #{$size});
+    }    
+  } 
+
+  .l{
+    .l3{
+      bottom:calc(0px * #{$size});
+      height:calc(7px * #{$size});
+    }
+  }
+
+  .m{
+    .m2{
+      bottom:calc(0px * #{$size});
+      height:calc(5px * #{$size});
+    }
+    .m3{
+      top:calc(2px * #{$size});
+      width: calc(3px * #{$size});
+    }
+    .m4{
+      top:calc(2px * #{$size});
+      right:calc(2px * #{$size});
+      height:calc(5px * #{$size});
+    }
+    .m5{
+      top:calc(2px * #{$size});
+      width: calc(3px * #{$size});
+    }
+    .m6{
+      top:calc(2px * #{$size});
+      height:calc(5px * #{$size});
+    }
+    
+  }
+
+  .n{
+    .n2{
+      bottom:calc(0px * #{$size});
+      height:calc(5px * #{$size});
+    }
+    .n3{
+      top:calc(2px * #{$size});
+      width: calc(3px * #{$size});
+    }
+    .n5{
+      top:calc(2px * #{$size});
+      height: calc(5px * #{$size});
+    }
+  }
+
+  .o{
+    .o2{
+      bottom:calc(0px * #{$size});
+      height:calc(5px * #{$size});
+    }
+    .o3{
+      top:calc(2px * #{$size});
+      width: calc(3px * #{$size});
+    }
+    .o4{
+      bottom:calc(0px * #{$size});
+      width: calc(3px * #{$size});
+    }
+    .o5{
+      top:calc(2px * #{$size});
+      height: calc(5px * #{$size});
+    }
+    .letterEnd{
+      top:calc(2px * #{$size});
+    }
+  }
+
+  .p{
+    .p2{
+      top:calc(2px * #{$size});
+      height:calc(7px * #{$size});
+    }
+    .p3{
+      bottom:calc(0px * #{$size});
+      width: calc(3px * #{$size});
+    }
+    .p4{
+      top:calc(2px * #{$size});
+      height:calc(5px * #{$size});
+    }
+    .p5{
+      top:calc(2px * #{$size});
+      width: calc(3px * #{$size});
+    }
+    
+  }
+  
+
+  .q{
+    .q2{
+      top:calc(2px * #{$size});
+      height:calc(7px * #{$size});
+    }
+    .q3{
+      bottom:calc(0px * #{$size});
+      width: calc(3px * #{$size});
+    }
+    .q4{
+      top:calc(2px * #{$size});
+      height:calc(5px * #{$size});
+    }
+    .q5{
+      top:calc(2px * #{$size});
+      width: calc(3px * #{$size});
+    }
+    
+  }
+  
+  .r{
+    .r2{
+      bottom:calc(0px * #{$size});
+      height:calc(5px * #{$size});
+    }
+    .r3{
+      top:calc(2px * #{$size});
+      width: calc(2px * #{$size});
+    }
+  }
+
+  .s{
+    .s2{
+      bottom:calc(2px * #{$size});
+      height:calc(3px * #{$size});
+    }
+    .s3{
+      bottom:calc(4px * #{$size});
+      width: calc(3px * #{$size});
+    }
+    .s4{
+      bottom:calc(2px * #{$size});
+      width: calc(3px * #{$size});
+    }
+    .s5{
+      bottom:calc(0px * #{$size});
+      height:calc(3px * #{$size});
+    }
+    .s6{
+      bottom:calc(0px * #{$size});
+      width: calc(3px * #{$size});
+    }
+  } 
+
+  .t{
+    .t2{
+      bottom:calc(0px * #{$size});
+      height:calc(7px * #{$size});
+    }
+    .t3{
+      top:calc(2px * #{$size});
+      width: calc(2px * #{$size});
+    }
+  }
+  
+
+  .u{
+    .u2{
+      bottom:calc(0px * #{$size});
+      height:calc(5px * #{$size});
+    }
+    .u3{
+      bottom:calc(0px * #{$size});
+      width: calc(3px * #{$size});
+    }
+    .u5{
+      top:calc(2px * #{$size});
+      height: calc(5px * #{$size});
+    }
+  }
+
+  .v{
+    .v2{
+      bottom:calc(1px * #{$size});
+      height:calc(4px * #{$size});
+    }
+    .v3{
+      bottom:calc(0px * #{$size});
+      width: calc(1px * #{$size});
+    }
+    .v5{
+      top:calc(2px * #{$size});
+      height: calc(4px * #{$size});
+    }
+    .letterStart,.letterEnd{
+      top:calc(2px * #{$size});
+    }
+  }
+
+  .w{
+    .w2{
+      bottom:calc(0px * #{$size});
+      height:calc(5px * #{$size});
+    }
+    .w3{
+      top:calc(6px * #{$size});
+      width: calc(3px * #{$size});
+    }
+    .w4{
+      top:calc(2px * #{$size});
+      right:calc(2px * #{$size});
+      height:calc(5px * #{$size});
+    }
+    .w5{
+      bottom:calc(0px * #{$size});
+      width: calc(3px * #{$size});
+    }
+    .w6{
+      top:calc(2px * #{$size});
+      height:calc(5px * #{$size});
+    }
+  }
+
+  .x{
+    .x2{
+      bottom:calc(0px * #{$size});
+      height:calc(2px * #{$size});
+    }
+    .x3{
+      bottom:calc(2px * #{$size});
+      width: calc(1px * #{$size});
+    }
+    .x5{
+      top:calc(2px * #{$size});
+      height: calc(2px * #{$size});
+    }
+    .x6{
+      top:calc(2px * #{$size});
+      height: calc(2px * #{$size});
+    }
+    .x7{
+      bottom:calc(0px * #{$size});
+      height: calc(2px * #{$size});
+    }
+  }
+
+  .y{
+    .y2{
+      top:calc(2px * #{$size});
+      height:calc(5px * #{$size});
+    }
+    .y3{
+      bottom:calc(0px * #{$size});
+      width: calc(3px * #{$size});
+    }
+    .y4{
+      top:calc(2px * #{$size});
+      height:calc(7px * #{$size});
+    }
+    .y6{
+      bottom:calc(-2px * #{$size});
+      width: calc(3px * #{$size});
+    } 
+  }
+  
+
+  .z{
+    .z2{
+      bottom:calc(3px * #{$size});
+      height:calc(2px * #{$size});
+    }
+    .z3{
+      bottom:calc(4px * #{$size});
+      width: calc(3px * #{$size});
+    }
+    .z4{
+      bottom:calc(2px * #{$size});
+      width: calc(3px * #{$size});
+    }
+    .z5{
+      bottom:calc(0px * #{$size});
+      height:calc(2px * #{$size});
+    }
+    .z6{
+      bottom:calc(0px * #{$size});
+      width: calc(3px * #{$size});
+    }
+  } 
 }

@@ -5,21 +5,18 @@
 html{
   scroll-behavior: smooth;
 }
-
 body {
   width: 100vw;
   overflow-x: hidden;
-}
-
-
-.stop-scrolling {
-  height: 100%;
-  overflow: hidden;
-}
-
-a{
-  color: #000;
-  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  background-color: red;
+  &.stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+  }
 }
 
 .bg--red{
@@ -28,13 +25,63 @@ a{
   margin-top: 100vh;
 }
 
+
+/////////LINK//////////
+a{
+  color: #000;
+  text-decoration: none;
+}
+
+
+.link{
+  position: relative;
+  display: inline-block;
+  &:after{
+    background-color: #000;
+    width: 100%;
+    height:6px;
+    content: "";
+    display: block;
+  }
+  &--white{
+    &:after{
+      background-color: #fff;
+    }
+  }
+  &--experinces{
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+    border: solid 5px #fff;
+  }
+  &--back{
+    width: 50px;
+    margin-right: 50px;
+  }
+}
+
+
+
+
+///////// STRUCTUR ///////////
 .wrapper{
   width: calc(100vw - (1px * #{$size}));
   margin-left: calc(0.5px * #{$size}); 
   position: relative;
   z-index: 10;
+
   @media screen and (min-width: 640px) {
     margin-left: calc(0.5px * #{$size});
+    &.wrapper--about{
+      margin-top: -100vh;
+      display: flex;
+      justify-content:space-between;
+  
+      section{
+        width:100%;
+        width:calc(50% - (0.5px * #{$size}))
+      }
+    }
   }
   @media screen and (min-width: 1240px) {
     margin-left:calc(2px * #{$size});
@@ -47,13 +94,16 @@ a{
       margin-left: calc(2px * 50);
       position: relative;
     }
+    
   }
   @media screen and (max-width: 639px) {
     &.wrapper--products{
       margin-top: calc(3px * 50);
     }
   }
-
+  &.wrapper--contact{
+    margin-top: 100px;
+  }
 }
 
 .colum{
@@ -70,23 +120,50 @@ a{
       margin-right:0;
     }
   }
-  
-}
-
-section{
-  font-family: sans-serif;
-  font-weight: bold;
-  font-size: 1.2rem;
-  line-height: 1.8rem;
-  z-index: 2;
 }
 
 
 
-.about p, .section--2 p{
+/////////ABOUT/////////
+
+.about{
+  margin-top: calc(2px * #{$size});
+   @media screen and (min-width: 640px) {
+    margin-top:0;
+  }
+}
+
+.about--2{
+  transition: margin-top 1s ease-in-out;
+  @media screen and (min-width: 640px) {
+     margin-top: 100vh;
+  }
+  &.visible{
+    margin-top: 0vh;
+  }
+  @media screen and (min-width: 640px) {
+    &.visible{
+      margin-top:calc(7px * 12);
+    }
+  }
+}
+
+.textBox{
   background-color: #fff;
   padding: calc(0.25px * 50);
   margin-top:calc(1px *#{$size});
+}
+
+
+
+
+////////PROJECT/////////
+
+.project{
+  margin-top: 20px;;
+  @media screen and (min-width: 1240px) {
+    margin-top: 150px;
+  }
 }
 
 .prodoctBoxes{
@@ -122,12 +199,8 @@ section{
     top:calc(1 * #{$size});
   }
   
-  .project--full__header{
-
-    .project--full__headline{
-
-      display: block;
-    }
+  .project--full__headline{
+    display: block;
   }
 
   .project--full__description{
@@ -142,7 +215,6 @@ section{
     .discription{
       margin-left:calc(1px *#{$size});
       width: 100%;
-      .description__status,
       .description__genre{
         display: block;
       }
@@ -246,11 +318,11 @@ section{
         filter: grayscale(100%);
         width: 120%;
         transform-origin:100px 100px;
-        animation: spin 3s linear infinite;
-        @keyframes spin{
-          from{transform:rotate(0deg)}
-	        to{transform:rotate(360deg)}	
-        }
+        // animation: spin 3s linear infinite;
+        // @keyframes spin{
+        //   from{transform:rotate(0deg)}
+	      //   to{transform:rotate(360deg)}	
+        // }
       }
     }
   }
@@ -263,11 +335,11 @@ section{
       padding-top:5px;
       img{
         width: 120%;
-        animation: rightLeft 1s linear infinite alternate;
-        @keyframes rightLeft{
-          from{transform:translateX(0)}
-	        to{transform:translateX(-50px)}	
-        }
+        // animation: rightLeft 1s linear infinite alternate;
+        // @keyframes rightLeft{
+        //   from{transform:translateX(0)}
+	      //   to{transform:translateX(-50px)}	
+        // }
         
         &.weave--1{
           animation-delay: -0.5s;
@@ -290,11 +362,11 @@ section{
         margin-left: 20px;
         margin-top: -200px;
 
-        animation: scale 3s ease-in-out infinite alternate;
-        @keyframes scale{
-          from{transform:scale(0.8)}
-	        to{transform:scale(1.2)}	
-        }
+        // animation: scale 3s ease-in-out infinite alternate;
+        // @keyframes scale{
+        //   from{transform:scale(0.8)}
+	      //   to{transform:scale(1.2)}	
+        // }
       }
      
     }
@@ -304,176 +376,24 @@ section{
       height: 200px;
       img{
         margin-top: -50px;
-        animation: spin 3s linear infinite;
-        @keyframes spin{
-          from{transform:rotate(0deg)}
-	        to{transform:rotate(360deg)}	
-        }
+        // animation: spin 3s linear infinite;
+        // @keyframes spin{
+        //   from{transform:rotate(0deg)}
+	      //   to{transform:rotate(360deg)}	
+        // }
       }
     }
   }
-}
-
-.botton--project{
-  @media screen and (max-width: 639px) {
-    color:white !important;
-    background-color: red;
-    padding:10px;
-    margin-top: 20px;
-    text-align: center;
-  }
-}
-
-.wrapper--about{
-  @media screen and (min-width: 640px) {
-    margin-top: -100vh;
-    display: flex;
-    justify-content:space-between;
-
-    section{
-      width:100%;
-      width:calc(50% - (0.5px * #{$size}))
+  .teasor__link{
+    @media screen and (max-width: 639px) {
+      color:white !important;
+      background-color: red;
+      padding:10px;
+      margin-top: 20px;
+      text-align: center;
     }
   }
 }
-
-.about{
-  margin-top: calc(2px * #{$size});
-   @media screen and (min-width: 640px) {
-    margin-top:0;
-  }
-}
-
-.wrapper--contact{
-  margin-top: 150px;
-}
-
-.section--2{
-  transition: margin-top 1s ease-in-out;
-  @media screen and (min-width: 640px) {
-     margin-top: 100vh;
-  }
-  &.visible{
-    margin-top: 0vh;
-  }
-  @media screen and (min-width: 640px) {
-    &.visible{
-      margin-top:calc(9px * 12);
-    }
-  }
-
-}
-
-body{
-  background-color: red;
-  &.scroll{
-    .logo .word  .letter{
-      height:calc(14px * 50);
-      &:hover{
-        .letter__elemnt{
-          background-color:#000;
-        }
-      }
-    }
-    .nav .word .letter{
-      height:calc(7px * 5);
-      &:hover{
-        .letter__elemnt{
-          background-color:#fff;
-        }
-      }
-    }
-    
-    .bg--red{
-      @media screen and (min-width: 640px) {
-        margin-top: -125vh;
-        height: 200vh;
-      }
-    }
-    .logoPosition{
-      position: static;
-      margin-top: 128vh;
-    }
-  }
-  &.scrollsuper{
-    .logo .word  .letter{
-      height:calc(18px * 50);
-    }
-    .nav .word .letter{
-      height:calc(7px * 5);
-      &:hover{
-        .letter__elemnt{
-          background-color:#fff;
-        }
-      }
-    }
-  }
-}
-
-
-.project{
-  margin-top: 20px;;
-  @media screen and (min-width: 1240px) {
-    margin-top: 150px;
-  }
-
-}
-.box--intro{
-  a{
-    color:#000;
-    text-decoration: none;
-    display: block;
-    position: relative;
-    padding-left: 40px;
-    font-weight: bold;
-    line-height: 1.2em;
-  }
-  &::before{
-    content:"1.";
-    display: block;
-    position: absolute;
-
-  }
-}
-
-
-.link{
-  position: relative;
-  display: inline-block;
-  &:after{
-    background-color: #000;
-    width: 100%;
-    height:6px;
-    content: "";
-    display: block;
-  }
-}
-
-.link--white{
-  &:after{
-    background-color: #fff;
-  }
-}
-
-.link--experinces{
-  cursor: pointer;
-  background-color: #000;
-  color: #fff;
-  border: solid 5px #fff;
-}
-
-
-.link--back{
-  width: 50px;
-  margin-right: 50px;
-}
-
-.bg--red--impressum{
-  height: 50vh;
-}
-
-
-//mobil 
 
 .box--product__description__long{
   display: none;
@@ -485,3 +405,63 @@ body{
     margin-top: 40px;
   }
 }
+
+
+//////CONTACT/////////
+
+.contact{
+  padding-bottom: 50px;;
+  .word{
+    .letter{
+      height:calc(7px * 12);
+    }
+  }
+  a{
+    color:#fff;
+  }
+}
+
+///////// SCROLLBEHAVIOIR /////////
+
+body{
+  &.scroll{
+    .nav .word .letter{
+      height:calc(7px * 12);
+      &:hover{
+        .letter__elemnt{
+          background-color:#fff;
+        }
+      }
+    } 
+    .bg--red{
+
+      @media screen and (min-width: 640px) {
+        margin-top: -125vh;
+        height: 200vh;
+      }
+    }
+    .logoPosition{
+      position: static;
+      margin-top: 128vh;
+    }
+  }
+  &.scrollsuper{
+    .nav .word .letter{
+      height:calc(7px * 12);
+      &:hover{
+        .letter__elemnt{
+          background-color:#fff;
+        }
+      }
+    }
+  }
+}
+
+
+///////// Impressum/////////
+
+.bg--red--impressum{
+  height: 50vh;
+}
+
+

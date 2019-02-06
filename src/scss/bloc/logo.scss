@@ -1,10 +1,490 @@
-.logo{
+.intro{
   position: fixed;
   top:0;
 }
 
+.logo{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  height:calc(7px * 50);
+  .letter{
+    position: relative;
+    transition: all 1s ease-in-out;
+    height:calc(7px * 50);
+    &:hover{
+      height:calc(5px * 50);
+      transition: all 1s;
+    }
+    .letter__elemnt{
+      width: calc(0px * 0);
+      height:calc(0px * 0);
+      position: absolute;
+      display: block;
+      background-color: #000;
+      transition-timing-function:linear !important;
+      &.active{
+        width: calc(1px * 50);
+        height:calc(1px * 50);
+      }
+    }
+  }
+}
 
-.christinastephan{
+body{
+  background-color: red;
+  &.scroll{
+    .logo .letter{
+      height:calc(14px * 50);
+      &:hover{
+        .letter__elemnt{
+          background-color:#000;
+        }
+      }
+    }
+    .intro{
+      position: static;
+      margin-top: 128vh;
+    }
+  }
+  &.scrollsuper{
+    .logo .letter{
+      height:calc(18px * 50);
+    }
+  }
+}
+
+
+//mixine letter
+
+@mixin letter--a($size,$speed) {
+  .logo > .a{
+    width:calc(4px * #{$size});
+    .a1{
+      bottom:calc(0px * #{$size});
+      transition:width calc(2 * #{$speed});
+      &.active{
+        width:calc(2px * #{$size});
+      }
+    }
+    .a2{
+      left:calc(1px * #{$size});
+      bottom:calc(0px * #{$size});
+      transition:height calc(5 * #{$speed});
+      &.active{
+        height:calc(5px * #{$size});
+      }
+    }
+    .a3{
+      bottom:calc(4px * #{$size});
+      left:calc(1px * #{$size});
+      transition:width calc(3 * #{$speed});
+      &.active{
+        width: calc(3px * #{$size});
+      }
+    }
+    .a4{
+      left:calc(3px * #{$size});
+      top:calc(2px * #{$size});
+      transition:height calc(5 * #{$speed});
+      &.active{
+        height:calc(5px * #{$size});
+      }
+    }
+    .a5{
+      bottom:calc(2px * #{$size});
+      left:calc(1px * #{$size});
+      transition:width calc(3 * #{$speed});
+      &.active{
+        width: calc(3px * #{$size});
+      }
+    }
+    .a6{
+      bottom:calc(0px * #{$size});
+      left:calc(4px * #{$size});
+      transition:width calc(1 * #{$speed});
+      &.active{
+        width: calc(1px * #{$size});
+      }
+    }
+    
+    &.connectionEndLogo{
+      width:calc(4px * #{$size});
+      .a1{
+
+      }
+      .a2,.a3,.a5{
+        left:calc(1px * #{$size})
+      }
+      .a4{
+        left:calc(3px * #{$size});;
+      }
+      .a6{
+        left:calc(3px * #{$size});
+      }
+    }
+    
+    &.connectionStartLogo{
+      width:calc(4px * #{$size});
+      .a6{
+        display:none;
+      }
+    }
+    &.noConnectionLogo{
+      width:calc(3px * #{$size});
+      .a1,.a6{
+        display:none;
+      }
+    }
+    
+    &.topToBottomLogo{
+      .a1{
+        top:calc(2px * #{$size});
+      }
+    }
+  }
+  
+}
+@mixin letter--c($size,$speed) {
+  .logo > .c{
+    width:calc(4px * #{$size});
+    .c1{
+      top: calc(2px * #{$size});
+      right:calc(1px * #{$size});
+      transition:width calc(3 * #{$speed});
+      &.active{
+        width: calc(3px * #{$size});
+      }
+    }
+    .c2{
+      top: calc(2px * #{$size});
+      transition:height calc(5 * #{$speed});
+      &.active{
+        height:calc(5px * #{$size});
+      }
+    }
+    .c3{
+      bottom:calc(0px * #{$size});
+      transition:width calc(4 * #{$speed});
+      &.active{
+        width: calc(4px * #{$size});
+      }
+    }
+  }
+}
+@mixin letter--e($size,$speed) {
+  .logo > .e{
+    width:calc(4px * #{$size});
+    .e1{
+      bottom:calc(2px * #{$size});
+      transition:width calc(3 * #{$speed});
+      &.active{
+        width: calc(3px * #{$size});
+      }
+    }
+    .e2{
+      left:calc(2px * #{$size});
+      top:calc(2px * #{$size});
+      transition:height calc(5 * #{$speed});
+      &.active{
+        height:calc(3px * #{$size});
+      }
+    }
+    .e3{
+      bottom:calc(4px * #{$size});
+      top:calc(2px * #{$size});
+      transition:width calc(3 * #{$speed});
+      &.active{
+        width: calc(3px * #{$size});
+      }
+    }
+    .e4{
+      bottom:calc(0px * #{$size});
+      transition:height calc(5 * #{$speed});
+      &.active{
+        height:calc(5px * #{$size});
+      }
+    }
+    .e5{
+      bottom:calc(0px * #{$size});
+      transition:width calc(4 * #{$speed});
+      &.active{
+        width: calc(7px * #{$size});
+      }
+    }
+  }
+}
+@mixin letter--h($size,$speed) {
+  .logo > .h{
+    width:calc(3px * #{$size});
+    .h1{
+      bottom:calc(0px * #{$size});
+      transition:height calc(7 * #{$speed});
+    }
+    .h2{
+      bottom:calc(4px * #{$size});
+      transition:width calc(3 * #{$speed});
+    }
+    .h3{
+      left:calc(2px * #{$size});
+      top:calc(2px * #{$size});
+      transition:height calc(5 * #{$speed});
+    }
+    &.bottomToTopLogo{
+      .h1{
+        &.active{
+          height:calc(7px * #{$size});
+        }
+      }
+      .h2{
+        &.active{
+          width: calc(3px * #{$size});
+        }
+      }
+      .h3{
+        &.active{
+          height:calc(5px * #{$size});
+        }
+      }
+    }
+    
+    &.topToBottomLogo{
+      width:calc(4px * #{$size});
+      .h1{
+      left:calc(1px * #{$size});
+        &.active{
+          height:calc(7px * #{$size});
+        }
+      }
+      .h2{
+        left:calc(0px * #{$size});
+        &.active{
+          width: calc(4px * #{$size});
+        }
+      }
+      .h3{
+        left:calc(3px * #{$size});
+        &.active{
+          height:calc(5px * #{$size});
+        }
+      }
+    }
+  }
+}
+@mixin letter--i($size,$speed) {
+  .logo > .i{
+    width: calc(1px * #{$size});
+
+    .i1{
+      top:calc(2px * #{$size});
+      &.active{
+        height:calc(5px * #{$size});
+      }
+    }
+    .i2{
+      top:calc(0px * #{$size});
+      &.active{
+        height:calc(1px * #{$size});
+      }
+    }
+  }
+}
+@mixin letter--r($size,$speed) {
+  .logo > .r{
+    width: calc(3px * #{$size});
+    .r1{
+      bottom:calc(0px * #{$size});
+      transition:width calc(2 * #{$speed});
+      &.active{
+        width: calc(2px * #{$size});
+      }
+    }
+    .r2{
+      left:calc(1px * #{$size});
+      bottom:calc(0px * #{$size});
+      transition:height calc(5 * #{$speed});
+      &.active{
+        height:calc(5px * #{$size});
+      }
+    }
+    .r3{
+      top:calc(2px * #{$size});
+      left:calc(1px * #{$size});
+      transition:width calc(2 * #{$speed});
+      &.active{
+        width: calc(2px * #{$size});
+      }
+    }
+  }
+}
+@mixin letter--n($size,$speed) {
+  .logo > .n{
+    width:calc(4px * #{$size});
+    .n1{
+      bottom:calc(0px * #{$size});
+      transition:width calc(2 * #{$speed});
+      &.active{
+        width:calc(2px * #{$size});
+      }
+    }
+    .n2{
+      left:calc(1px * #{$size});
+      bottom:calc(0px * #{$size});
+      transition:height calc(5 * #{$speed});
+      &.active{
+        height:calc(5px * #{$size});
+      }
+    }
+    .n3{
+      bottom:calc(4px * #{$size});
+      left:calc(1px * #{$size});
+      transition:width calc(3 * #{$speed});
+      &.active{
+        width: calc(3px * #{$size});
+      }
+    }
+    .n4{
+      left:calc(3px * #{$size});
+      top:calc(2px * #{$size});
+      transition:height calc(5 * #{$speed});
+      &.active{
+        height:calc(5px * #{$size});
+      }
+    }
+    .n5{
+      bottom:calc(0px * #{$size});
+      transition:width calc(2 * #{$speed});
+      left:calc(3px * #{$size});
+      &.active{
+        width:calc(2px * #{$size});
+      }
+    }
+  }
+}
+@mixin letter--p($size,$speed) {
+  .logo > .p{
+    width:calc(3px * #{$size});
+    .p1{
+      left:calc(2px * #{$size});
+      bottom:calc(0px * #{$size});
+      transition:height calc(5 * #{$speed});
+      &.active{
+        height:calc(5px * #{$size});
+      }
+    }
+    .p2{
+      top:calc(2px * #{$size});
+      left:calc(0px * #{$size});
+      transition:width calc(3 * #{$speed});
+      &.active{
+        width: calc(3px * #{$size});
+      }
+    }
+    .p3{
+      top:calc(2px * #{$size});
+      transition:height calc(7 * #{$speed});
+      &.active{
+        height:calc(7px * #{$size});
+      }
+    }
+    .p4{
+      bottom:calc(0px * #{$size});
+      left:calc(0px * #{$size});
+      transition:width calc(3 * #{$speed});
+      &.active{
+        width: calc(3px * #{$size});
+      }
+    }
+  }
+}
+@mixin letter--s($size,$speed) {
+  .logo > .s{
+    width: calc(4px * #{$size});
+    .s1{
+      bottom:calc(0px * #{$size});
+      transition:width calc(4 * #{$speed});
+      &.active{
+        width: calc(4px * #{$size});
+      }
+    }
+    .s2{
+      left:calc(3px * #{$size});
+      bottom:calc(0px * #{$size});
+      transition:height calc(3 * #{$speed});
+      &.active{
+        height:calc(3px * #{$size});
+      }
+    }
+    .s3{
+      bottom:calc(2px * #{$size});
+      right:0;
+      transition:width calc(3 * #{$speed});
+      &.active{
+        width: calc(3px * #{$size});
+      }
+    }
+    .s4{
+      bottom:calc(2px * #{$size});
+      left:calc(1px * #{$size});
+      transition:height calc(3 * #{$speed});
+      &.active{
+        height:calc(3px * #{$size});
+      }
+    }
+    .s5{
+      top:calc(2px * #{$size});
+      left:calc(1px * #{$size});
+      transition:width calc(3 * #{$speed});
+      &.active{
+        width: calc(3px * #{$size});
+      }
+    }
+  }
+}
+@mixin letter--t($size,$speed) {
+  .logo > .t{
+    width: calc(3px * #{$size});
+    .t2{
+      transition:width calc(3 * #{$speed});
+      top: calc(2px * #{$size});
+      &.active{
+        width:calc(3px * #{$size});
+      }
+    }
+    .t1{
+      left: calc(1px * #{$size});
+      transition:height calc(7 * #{$speed});
+      &.active{
+        height:calc(7px * #{$size});
+      }
+    }
+  }
+}
+
+//christina stephan
+
+  @include letter--c(50,0.01s);
+  @include letter--h(50,0.01s);
+  @include letter--r(50,0.01s);
+  @include letter--i(50,0.01s);
+  @include letter--s(50,0.01s);
+  @include letter--t(50,0.01s);
+  @include letter--i(50,0.01s);
+  @include letter--n(50,0.01s);
+  @include letter--a(50,0.01s);
+  @include letter--s(50,0.01s);
+  @include letter--t(50,0.01s);
+  @include letter--e(50,0.01s);
+  @include letter--p(50,0.01s);
+  @include letter--h(50,0.01s);
+  @include letter--a(50,0.01s);
+  @include letter--n(50,0.01s);
+
+
+
+
+//animation
+.animation{
   .christinastephan__c{
     .c1{
       transition:width calc(3 * #{$speed});
