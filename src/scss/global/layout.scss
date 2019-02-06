@@ -318,11 +318,11 @@ a{
         filter: grayscale(100%);
         width: 120%;
         transform-origin:100px 100px;
-        // animation: spin 3s linear infinite;
-        // @keyframes spin{
-        //   from{transform:rotate(0deg)}
-	      //   to{transform:rotate(360deg)}	
-        // }
+        animation: spin 3s linear infinite;
+        @keyframes spin{
+          from{transform:rotate(0deg)}
+	        to{transform:rotate(360deg)}	
+        }
       }
     }
   }
@@ -335,11 +335,11 @@ a{
       padding-top:5px;
       img{
         width: 120%;
-        // animation: rightLeft 1s linear infinite alternate;
-        // @keyframes rightLeft{
-        //   from{transform:translateX(0)}
-	      //   to{transform:translateX(-50px)}	
-        // }
+        animation: rightLeft 1s linear infinite alternate;
+        @keyframes rightLeft{
+          from{transform:translateX(0)}
+	        to{transform:translateX(-50px)}	
+        }
         
         &.weave--1{
           animation-delay: -0.5s;
@@ -362,11 +362,11 @@ a{
         margin-left: 20px;
         margin-top: -200px;
 
-        // animation: scale 3s ease-in-out infinite alternate;
-        // @keyframes scale{
-        //   from{transform:scale(0.8)}
-	      //   to{transform:scale(1.2)}	
-        // }
+        animation: scale 3s ease-in-out infinite alternate;
+        @keyframes scale{
+          from{transform:scale(0.8)}
+	        to{transform:scale(1.2)}	
+        }
       }
      
     }
@@ -376,11 +376,11 @@ a{
       height: 200px;
       img{
         margin-top: -50px;
-        // animation: spin 3s linear infinite;
-        // @keyframes spin{
-        //   from{transform:rotate(0deg)}
-	      //   to{transform:rotate(360deg)}	
-        // }
+        animation: spin 3s linear infinite;
+        @keyframes spin{
+          from{transform:rotate(0deg)}
+	        to{transform:rotate(360deg)}	
+        }
       }
     }
   }
